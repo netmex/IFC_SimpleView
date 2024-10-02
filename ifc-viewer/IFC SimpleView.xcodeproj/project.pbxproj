@@ -1707,11 +1707,9 @@
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3,
-					"$(PROJECT_DIR)/ifcgeom/kernels/opencascade",
-					/opt/homebrew/Cellar/gmp/6.3.0/include,
-					/opt/homebrew/Cellar/mpfr/4.2.1/include,
-					/opt/homebrew/Cellar/boost/1.85.0/include,
+					/opt/homebrew/include/boost,
+					/opt/homebrew/include/eigen3,
+					/opt/homebrew/include,
 				);
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 			};
@@ -2014,11 +2012,9 @@
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3,
-					"$(PROJECT_DIR)/ifcgeom/kernels/opencascade",
-					/opt/homebrew/Cellar/gmp/6.3.0/include,
-					/opt/homebrew/Cellar/mpfr/4.2.1/include,
-					/opt/homebrew/Cellar/boost/1.85.0/include,
+					/opt/homebrew/include/boost,
+					/opt/homebrew/include/eigen3,
+					/opt/homebrew/include,
 				);
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 			};
