@@ -1,0 +1,2051 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D0DF0892BD6533E00C680EF /* IFCSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0DF0882BD6533E00C680EF /* IFCSimpleView.swift */; };
+		0D0DF08B2BD6533E00C680EF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0DF08A2BD6533E00C680EF /* MainView.swift */; };
+		0D0DF08D2BD6534000C680EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D0DF08C2BD6534000C680EF /* Assets.xcassets */; };
+		0D0DF0902BD6534000C680EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D0DF08F2BD6534000C680EF /* Preview Assets.xcassets */; };
+		0D0DF09A2BD65AD800C680EF /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0DF0992BD65AD800C680EF /* MainViewViewModel.swift */; };
+		0D86EBE82BE021B8007522E4 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86EBE72BE021B8007522E4 /* SceneView.swift */; };
+		0D86EBEA2BE29080007522E4 /* SceneViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86EBE92BE29080007522E4 /* SceneViewWrapper.swift */; };
+		960575DF2C8FC391009AA030 /* libTKXmlTObj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605759C2C8FC308009AA030 /* libTKXmlTObj.a */; };
+		960575E02C8FC391009AA030 /* libTKStdL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605759D2C8FC30A009AA030 /* libTKStdL.a */; };
+		960575E12C8FC391009AA030 /* libTKBin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605759E2C8FC30C009AA030 /* libTKBin.a */; };
+		960575E22C8FC391009AA030 /* libTKXSDRAWDE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605759F2C8FC30E009AA030 /* libTKXSDRAWDE.a */; };
+		960575E32C8FC391009AA030 /* libTKXSDRAWGLTF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575A02C8FC310009AA030 /* libTKXSDRAWGLTF.a */; };
+		960575E42C8FC391009AA030 /* libTKXmlXCAF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575A12C8FC312009AA030 /* libTKXmlXCAF.a */; };
+		960575E52C8FC391009AA030 /* libTKXSDRAWIGES.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575A22C8FC314009AA030 /* libTKXSDRAWIGES.a */; };
+		960575E62C8FC391009AA030 /* libTKXSDRAWSTL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575A32C8FC316009AA030 /* libTKXSDRAWSTL.a */; };
+		960575E72C8FC391009AA030 /* libTKTopAlgo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575A42C8FC318009AA030 /* libTKTopAlgo.a */; };
+		960575E82C8FC391009AA030 /* libTKDECascade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575A52C8FC31A009AA030 /* libTKDECascade.a */; };
+		960575E92C8FC391009AA030 /* libTKG3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575A62C8FC31D009AA030 /* libTKG3d.a */; };
+		960575EA2C8FC391009AA030 /* libTKOffset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575A72C8FC31F009AA030 /* libTKOffset.a */; };
+		960575EB2C8FC391009AA030 /* libTKXSDRAWOBJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575A82C8FC321009AA030 /* libTKXSDRAWOBJ.a */; };
+		960575EC2C8FC391009AA030 /* libTKXSDRAWPLY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575A92C8FC323009AA030 /* libTKXSDRAWPLY.a */; };
+		960575ED2C8FC391009AA030 /* libTKDEGLTF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575AA2C8FC325009AA030 /* libTKDEGLTF.a */; };
+		960575EE2C8FC391009AA030 /* libTKXCAF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575AB2C8FC327009AA030 /* libTKXCAF.a */; };
+		960575EF2C8FC391009AA030 /* libTKXSBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575AC2C8FC329009AA030 /* libTKXSBase.a */; };
+		960575F02C8FC391009AA030 /* libTKernel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575AD2C8FC32B009AA030 /* libTKernel.a */; };
+		960575F12C8FC391009AA030 /* libTKDEIGES.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575AE2C8FC32D009AA030 /* libTKDEIGES.a */; };
+		960575F22C8FC391009AA030 /* libTKBool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575AF2C8FC32F009AA030 /* libTKBool.a */; };
+		960575F32C8FC391009AA030 /* libTKMesh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575B02C8FC331009AA030 /* libTKMesh.a */; };
+		960575F42C8FC391009AA030 /* libTKExpress.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575B12C8FC333009AA030 /* libTKExpress.a */; };
+		960575F52C8FC391009AA030 /* libTKTObj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575B22C8FC335009AA030 /* libTKTObj.a */; };
+		960575F62C8FC391009AA030 /* libTKDCAF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575B32C8FC337009AA030 /* libTKDCAF.a */; };
+		960575F72C8FC391009AA030 /* libTKGeomBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575B42C8FC339009AA030 /* libTKGeomBase.a */; };
+		960575F82C8FC391009AA030 /* libTKVCAF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575B52C8FC33B009AA030 /* libTKVCAF.a */; };
+		960575F92C8FC391009AA030 /* libTKMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575B62C8FC33E009AA030 /* libTKMath.a */; };
+		960575FA2C8FC391009AA030 /* libTKDESTEP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575B72C8FC340009AA030 /* libTKDESTEP.a */; };
+		960575FB2C8FC391009AA030 /* libTKGeomAlgo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575B82C8FC342009AA030 /* libTKGeomAlgo.a */; };
+		960575FC2C8FC391009AA030 /* libTKXDEDRAW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575B92C8FC344009AA030 /* libTKXDEDRAW.a */; };
+		960575FD2C8FC391009AA030 /* libTKHLR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575BA2C8FC346009AA030 /* libTKHLR.a */; };
+		960575FE2C8FC391009AA030 /* libTKPrim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575BB2C8FC349009AA030 /* libTKPrim.a */; };
+		960575FF2C8FC391009AA030 /* libTKCDF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575BC2C8FC34B009AA030 /* libTKCDF.a */; };
+		960576002C8FC391009AA030 /* libTKLCAF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575BD2C8FC34D009AA030 /* libTKLCAF.a */; };
+		960576012C8FC391009AA030 /* libTKDEVRML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575BE2C8FC34F009AA030 /* libTKDEVRML.a */; };
+		960576022C8FC391009AA030 /* libTKG2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575BF2C8FC351009AA030 /* libTKG2d.a */; };
+		960576032C8FC391009AA030 /* libTKXSDRAW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575C02C8FC353009AA030 /* libTKXSDRAW.a */; };
+		960576042C8FC391009AA030 /* libTKTObjDRAW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575C12C8FC355009AA030 /* libTKTObjDRAW.a */; };
+		960576052C8FC391009AA030 /* libTKXml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575C22C8FC357009AA030 /* libTKXml.a */; };
+		960576062C8FC391009AA030 /* libTKBinXCAF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575C32C8FC359009AA030 /* libTKBinXCAF.a */; };
+		960576072C8FC391009AA030 /* libTKXSDRAWSTEP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575C42C8FC35B009AA030 /* libTKXSDRAWSTEP.a */; };
+		960576082C8FC391009AA030 /* libTKV3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575C52C8FC35D009AA030 /* libTKV3d.a */; };
+		960576092C8FC391009AA030 /* libTKTopTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575C62C8FC35F009AA030 /* libTKTopTest.a */; };
+		9605760A2C8FC391009AA030 /* libTKFeat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575C72C8FC361009AA030 /* libTKFeat.a */; };
+		9605760B2C8FC391009AA030 /* libTKBO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575C82C8FC363009AA030 /* libTKBO.a */; };
+		9605760C2C8FC391009AA030 /* libTKDEOBJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575C92C8FC366009AA030 /* libTKDEOBJ.a */; };
+		9605760D2C8FC391009AA030 /* libTKBinTObj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575CA2C8FC368009AA030 /* libTKBinTObj.a */; };
+		9605760E2C8FC391009AA030 /* libTKXSDRAWVRML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575CB2C8FC36A009AA030 /* libTKXSDRAWVRML.a */; };
+		9605760F2C8FC391009AA030 /* libTKDraw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575CC2C8FC36C009AA030 /* libTKDraw.a */; };
+		960576102C8FC391009AA030 /* libTKDE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575CD2C8FC36E009AA030 /* libTKDE.a */; };
+		960576112C8FC391009AA030 /* libTKXMesh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575CE2C8FC370009AA030 /* libTKXMesh.a */; };
+		960576122C8FC391009AA030 /* libTKMeshVS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575CF2C8FC372009AA030 /* libTKMeshVS.a */; };
+		960576132C8FC391009AA030 /* libTKXmlL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575D02C8FC374009AA030 /* libTKXmlL.a */; };
+		960576142C8FC391009AA030 /* libTKFillet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575D12C8FC376009AA030 /* libTKFillet.a */; };
+		960576152C8FC391009AA030 /* libTKService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575D22C8FC378009AA030 /* libTKService.a */; };
+		960576162C8FC391009AA030 /* libTKDESTL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575D32C8FC37A009AA030 /* libTKDESTL.a */; };
+		960576172C8FC391009AA030 /* libTKShHealing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575D42C8FC37C009AA030 /* libTKShHealing.a */; };
+		960576182C8FC392009AA030 /* libTKOpenGl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575D52C8FC37E009AA030 /* libTKOpenGl.a */; };
+		960576192C8FC392009AA030 /* libTKBinL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575D62C8FC380009AA030 /* libTKBinL.a */; };
+		9605761A2C8FC392009AA030 /* libTKStd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575D72C8FC382009AA030 /* libTKStd.a */; };
+		9605761B2C8FC392009AA030 /* libTKQADraw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575D82C8FC384009AA030 /* libTKQADraw.a */; };
+		9605761C2C8FC392009AA030 /* libTKViewerTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575D92C8FC386009AA030 /* libTKViewerTest.a */; };
+		9605761D2C8FC392009AA030 /* libTKCAF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575DA2C8FC388009AA030 /* libTKCAF.a */; };
+		9605761E2C8FC392009AA030 /* libTKRWMesh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575DB2C8FC38A009AA030 /* libTKRWMesh.a */; };
+		9605761F2C8FC392009AA030 /* libTKBRep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575DC2C8FC38D009AA030 /* libTKBRep.a */; };
+		960576202C8FC392009AA030 /* libTKDEPLY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575DD2C8FC38F009AA030 /* libTKDEPLY.a */; };
+		960576212C8FC392009AA030 /* libTKOpenGlTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575DE2C8FC391009AA030 /* libTKOpenGlTest.a */; };
+		961081232C8C498B00B617E9 /* libgmpxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961081212C8C498900B617E9 /* libgmpxx.a */; };
+		961081242C8C498B00B617E9 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961081222C8C498B00B617E9 /* libgmp.a */; };
+		961081262C8C4A6F00B617E9 /* libmpfr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961081252C8C4A6F00B617E9 /* libmpfr.a */; };
+		9617475E2C853DDB0027F98F /* libIfcGeom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9617475C2C853DD90027F98F /* libIfcGeom.a */; };
+		9617475F2C853DDB0027F98F /* libIfcParse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9617475D2C853DDB0027F98F /* libIfcParse.a */; };
+		96178C892C88A2570027F98F /* libSerializers_ifc4x1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C6C2C88A24A0027F98F /* libSerializers_ifc4x1.a */; };
+		96178C8A2C88A2570027F98F /* libSerializers_ifc4x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C6D2C88A24A0027F98F /* libSerializers_ifc4x3.a */; };
+		96178C8B2C88A2570027F98F /* libgeometry_serializer_ifc4x2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C6E2C88A24B0027F98F /* libgeometry_serializer_ifc4x2.a */; };
+		96178C8C2C88A2570027F98F /* libgeometry_serializer_ifc4x3_add1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C6F2C88A24B0027F98F /* libgeometry_serializer_ifc4x3_add1.a */; };
+		96178C8D2C88A2570027F98F /* libSerializers_ifc2x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C702C88A24B0027F98F /* libSerializers_ifc2x3.a */; };
+		96178C8E2C88A2570027F98F /* libgeometry_serializer_ifc4x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C712C88A24C0027F98F /* libgeometry_serializer_ifc4x3.a */; };
+		96178C8F2C88A2570027F98F /* libgeometry_serializer_ifc4x3_tc1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C722C88A24C0027F98F /* libgeometry_serializer_ifc4x3_tc1.a */; };
+		96178C902C88A2570027F98F /* libgeometry_serializer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C732C88A24D0027F98F /* libgeometry_serializer.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		96178C912C88A2570027F98F /* libgeometry_serializer_ifc4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C742C88A24D0027F98F /* libgeometry_serializer_ifc4.a */; };
+		96178C922C88A2570027F98F /* libSerializers_ifc4x3_tc1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C752C88A24E0027F98F /* libSerializers_ifc4x3_tc1.a */; };
+		96178C932C88A2570027F98F /* libgeometry_serializer_ifc4x3_add2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C762C88A24E0027F98F /* libgeometry_serializer_ifc4x3_add2.a */; };
+		96178C942C88A2570027F98F /* libSerializers_ifc4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C772C88A24F0027F98F /* libSerializers_ifc4.a */; };
+		96178C952C88A2570027F98F /* libgeometry_serializer_ifc2x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C782C88A24F0027F98F /* libgeometry_serializer_ifc2x3.a */; };
+		96178C962C88A2570027F98F /* libgeometry_kernel_opencascade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C792C88A2500027F98F /* libgeometry_kernel_opencascade.a */; };
+		96178C972C88A2570027F98F /* libgeometry_mapping_ifc4x3_tc1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7A2C88A2500027F98F /* libgeometry_mapping_ifc4x3_tc1.a */; };
+		96178C982C88A2570027F98F /* libgeometry_mapping_ifc4x1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7B2C88A2510027F98F /* libgeometry_mapping_ifc4x1.a */; };
+		96178C992C88A2570027F98F /* libSerializers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7C2C88A2510027F98F /* libSerializers.a */; };
+		96178C9A2C88A2570027F98F /* libSerializers_ifc4x2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7D2C88A2520027F98F /* libSerializers_ifc4x2.a */; };
+		96178C9B2C88A2570027F98F /* libgeometry_mapping_ifc2x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7E2C88A2520027F98F /* libgeometry_mapping_ifc2x3.a */; };
+		96178C9C2C88A2570027F98F /* libgeometry_kernel_cgal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7F2C88A2530027F98F /* libgeometry_kernel_cgal.a */; };
+		96178C9D2C88A2570027F98F /* libgeometry_mapping_ifc4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C802C88A2530027F98F /* libgeometry_mapping_ifc4.a */; };
+		96178C9E2C88A2570027F98F /* libgeometry_mapping_ifc4x2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C812C88A2540027F98F /* libgeometry_mapping_ifc4x2.a */; };
+		96178C9F2C88A2570027F98F /* libgeometry_kernel_cgal_simple.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C822C88A2540027F98F /* libgeometry_kernel_cgal_simple.a */; };
+		96178CA02C88A2570027F98F /* libgeometry_serializer_ifc4x1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C832C88A2550027F98F /* libgeometry_serializer_ifc4x1.a */; };
+		96178CA12C88A2570027F98F /* libgeometry_mapping_ifc4x3_add2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C842C88A2550027F98F /* libgeometry_mapping_ifc4x3_add2.a */; };
+		96178CA22C88A2570027F98F /* libSerializers_ifc4x3_add1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C852C88A2560027F98F /* libSerializers_ifc4x3_add1.a */; };
+		96178CA32C88A2570027F98F /* libgeometry_mapping_ifc4x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C862C88A2560027F98F /* libgeometry_mapping_ifc4x3.a */; };
+		96178CA42C88A2570027F98F /* libgeometry_mapping_ifc4x3_add1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C872C88A2570027F98F /* libgeometry_mapping_ifc4x3_add1.a */; };
+		96178CA52C88A2570027F98F /* libSerializers_ifc4x3_add2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C882C88A2570027F98F /* libSerializers_ifc4x3_add2.a */; };
+		96220F172C9747260021A371 /* GeometryConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96220F162C9747260021A371 /* GeometryConverter.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D0DF0852BD6533E00C680EF /* IFC SimpleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IFC SimpleView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D0DF0882BD6533E00C680EF /* IFCSimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFCSimpleView.swift; sourceTree = "<group>"; };
+		0D0DF08A2BD6533E00C680EF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0D0DF08C2BD6534000C680EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D0DF08F2BD6534000C680EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D0DF0912BD6534000C680EF /* IFCSimpleView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IFCSimpleView.entitlements; sourceTree = "<group>"; };
+		0D0DF0992BD65AD800C680EF /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		0D86EBE72BE021B8007522E4 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		0D86EBE92BE29080007522E4 /* SceneViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewWrapper.swift; sourceTree = "<group>"; };
+		9605759C2C8FC308009AA030 /* libTKXmlTObj.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXmlTObj.a; sourceTree = "<group>"; };
+		9605759D2C8FC30A009AA030 /* libTKStdL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKStdL.a; sourceTree = "<group>"; };
+		9605759E2C8FC30C009AA030 /* libTKBin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKBin.a; sourceTree = "<group>"; };
+		9605759F2C8FC30E009AA030 /* libTKXSDRAWDE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXSDRAWDE.a; sourceTree = "<group>"; };
+		960575A02C8FC310009AA030 /* libTKXSDRAWGLTF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXSDRAWGLTF.a; sourceTree = "<group>"; };
+		960575A12C8FC312009AA030 /* libTKXmlXCAF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXmlXCAF.a; sourceTree = "<group>"; };
+		960575A22C8FC314009AA030 /* libTKXSDRAWIGES.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXSDRAWIGES.a; sourceTree = "<group>"; };
+		960575A32C8FC316009AA030 /* libTKXSDRAWSTL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXSDRAWSTL.a; sourceTree = "<group>"; };
+		960575A42C8FC318009AA030 /* libTKTopAlgo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKTopAlgo.a; sourceTree = "<group>"; };
+		960575A52C8FC31A009AA030 /* libTKDECascade.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDECascade.a; sourceTree = "<group>"; };
+		960575A62C8FC31D009AA030 /* libTKG3d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKG3d.a; sourceTree = "<group>"; };
+		960575A72C8FC31F009AA030 /* libTKOffset.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKOffset.a; sourceTree = "<group>"; };
+		960575A82C8FC321009AA030 /* libTKXSDRAWOBJ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXSDRAWOBJ.a; sourceTree = "<group>"; };
+		960575A92C8FC323009AA030 /* libTKXSDRAWPLY.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXSDRAWPLY.a; sourceTree = "<group>"; };
+		960575AA2C8FC325009AA030 /* libTKDEGLTF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDEGLTF.a; sourceTree = "<group>"; };
+		960575AB2C8FC327009AA030 /* libTKXCAF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXCAF.a; sourceTree = "<group>"; };
+		960575AC2C8FC329009AA030 /* libTKXSBase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXSBase.a; sourceTree = "<group>"; };
+		960575AD2C8FC32B009AA030 /* libTKernel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKernel.a; sourceTree = "<group>"; };
+		960575AE2C8FC32D009AA030 /* libTKDEIGES.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDEIGES.a; sourceTree = "<group>"; };
+		960575AF2C8FC32F009AA030 /* libTKBool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKBool.a; sourceTree = "<group>"; };
+		960575B02C8FC331009AA030 /* libTKMesh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKMesh.a; sourceTree = "<group>"; };
+		960575B12C8FC333009AA030 /* libTKExpress.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKExpress.a; sourceTree = "<group>"; };
+		960575B22C8FC335009AA030 /* libTKTObj.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKTObj.a; sourceTree = "<group>"; };
+		960575B32C8FC337009AA030 /* libTKDCAF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDCAF.a; sourceTree = "<group>"; };
+		960575B42C8FC339009AA030 /* libTKGeomBase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKGeomBase.a; sourceTree = "<group>"; };
+		960575B52C8FC33B009AA030 /* libTKVCAF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKVCAF.a; sourceTree = "<group>"; };
+		960575B62C8FC33E009AA030 /* libTKMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKMath.a; sourceTree = "<group>"; };
+		960575B72C8FC340009AA030 /* libTKDESTEP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDESTEP.a; sourceTree = "<group>"; };
+		960575B82C8FC342009AA030 /* libTKGeomAlgo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKGeomAlgo.a; sourceTree = "<group>"; };
+		960575B92C8FC344009AA030 /* libTKXDEDRAW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXDEDRAW.a; sourceTree = "<group>"; };
+		960575BA2C8FC346009AA030 /* libTKHLR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKHLR.a; sourceTree = "<group>"; };
+		960575BB2C8FC349009AA030 /* libTKPrim.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKPrim.a; sourceTree = "<group>"; };
+		960575BC2C8FC34B009AA030 /* libTKCDF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKCDF.a; sourceTree = "<group>"; };
+		960575BD2C8FC34D009AA030 /* libTKLCAF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKLCAF.a; sourceTree = "<group>"; };
+		960575BE2C8FC34F009AA030 /* libTKDEVRML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDEVRML.a; sourceTree = "<group>"; };
+		960575BF2C8FC351009AA030 /* libTKG2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKG2d.a; sourceTree = "<group>"; };
+		960575C02C8FC353009AA030 /* libTKXSDRAW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXSDRAW.a; sourceTree = "<group>"; };
+		960575C12C8FC355009AA030 /* libTKTObjDRAW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKTObjDRAW.a; sourceTree = "<group>"; };
+		960575C22C8FC357009AA030 /* libTKXml.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXml.a; sourceTree = "<group>"; };
+		960575C32C8FC359009AA030 /* libTKBinXCAF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKBinXCAF.a; sourceTree = "<group>"; };
+		960575C42C8FC35B009AA030 /* libTKXSDRAWSTEP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXSDRAWSTEP.a; sourceTree = "<group>"; };
+		960575C52C8FC35D009AA030 /* libTKV3d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKV3d.a; sourceTree = "<group>"; };
+		960575C62C8FC35F009AA030 /* libTKTopTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKTopTest.a; sourceTree = "<group>"; };
+		960575C72C8FC361009AA030 /* libTKFeat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKFeat.a; sourceTree = "<group>"; };
+		960575C82C8FC363009AA030 /* libTKBO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKBO.a; sourceTree = "<group>"; };
+		960575C92C8FC366009AA030 /* libTKDEOBJ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDEOBJ.a; sourceTree = "<group>"; };
+		960575CA2C8FC368009AA030 /* libTKBinTObj.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKBinTObj.a; sourceTree = "<group>"; };
+		960575CB2C8FC36A009AA030 /* libTKXSDRAWVRML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXSDRAWVRML.a; sourceTree = "<group>"; };
+		960575CC2C8FC36C009AA030 /* libTKDraw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDraw.a; sourceTree = "<group>"; };
+		960575CD2C8FC36E009AA030 /* libTKDE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDE.a; sourceTree = "<group>"; };
+		960575CE2C8FC370009AA030 /* libTKXMesh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXMesh.a; sourceTree = "<group>"; };
+		960575CF2C8FC372009AA030 /* libTKMeshVS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKMeshVS.a; sourceTree = "<group>"; };
+		960575D02C8FC374009AA030 /* libTKXmlL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKXmlL.a; sourceTree = "<group>"; };
+		960575D12C8FC376009AA030 /* libTKFillet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKFillet.a; sourceTree = "<group>"; };
+		960575D22C8FC378009AA030 /* libTKService.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKService.a; sourceTree = "<group>"; };
+		960575D32C8FC37A009AA030 /* libTKDESTL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDESTL.a; sourceTree = "<group>"; };
+		960575D42C8FC37C009AA030 /* libTKShHealing.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKShHealing.a; sourceTree = "<group>"; };
+		960575D52C8FC37E009AA030 /* libTKOpenGl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKOpenGl.a; sourceTree = "<group>"; };
+		960575D62C8FC380009AA030 /* libTKBinL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKBinL.a; sourceTree = "<group>"; };
+		960575D72C8FC382009AA030 /* libTKStd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKStd.a; sourceTree = "<group>"; };
+		960575D82C8FC384009AA030 /* libTKQADraw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKQADraw.a; sourceTree = "<group>"; };
+		960575D92C8FC386009AA030 /* libTKViewerTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKViewerTest.a; sourceTree = "<group>"; };
+		960575DA2C8FC388009AA030 /* libTKCAF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKCAF.a; sourceTree = "<group>"; };
+		960575DB2C8FC38A009AA030 /* libTKRWMesh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKRWMesh.a; sourceTree = "<group>"; };
+		960575DC2C8FC38D009AA030 /* libTKBRep.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKBRep.a; sourceTree = "<group>"; };
+		960575DD2C8FC38F009AA030 /* libTKDEPLY.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDEPLY.a; sourceTree = "<group>"; };
+		960575DE2C8FC391009AA030 /* libTKOpenGlTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKOpenGlTest.a; sourceTree = "<group>"; };
+		961081212C8C498900B617E9 /* libgmpxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmpxx.a; sourceTree = "<group>"; };
+		961081222C8C498B00B617E9 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
+		961081252C8C4A6F00B617E9 /* libmpfr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmpfr.a; sourceTree = "<group>"; };
+		9617475C2C853DD90027F98F /* libIfcGeom.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIfcGeom.a; sourceTree = "<group>"; };
+		9617475D2C853DDB0027F98F /* libIfcParse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIfcParse.a; sourceTree = "<group>"; };
+		961747602C853E030027F98F /* CgalConversionResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CgalConversionResult.cpp; sourceTree = "<group>"; };
+		961747612C853E030027F98F /* CgalConversionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CgalConversionResult.h; sourceTree = "<group>"; };
+		961747622C853E030027F98F /* CgalKernel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CgalKernel.cpp; sourceTree = "<group>"; };
+		961747632C853E030027F98F /* CgalKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CgalKernel.h; sourceTree = "<group>"; };
+		961747642C853E030027F98F /* nef_to_halfspace_tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nef_to_halfspace_tree.h; sourceTree = "<group>"; };
+		961747662C853E030027F98F /* base_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base_utils.cpp; sourceTree = "<group>"; };
+		961747672C853E030027F98F /* base_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base_utils.h; sourceTree = "<group>"; };
+		961747682C853E030027F98F /* boolean_result.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boolean_result.cpp; sourceTree = "<group>"; };
+		961747692C853E030027F98F /* boolean_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boolean_utils.cpp; sourceTree = "<group>"; };
+		9617476A2C853E030027F98F /* boolean_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boolean_utils.h; sourceTree = "<group>"; };
+		9617476B2C853E030027F98F /* bspline_surface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bspline_surface.cpp; sourceTree = "<group>"; };
+		9617476C2C853E030027F98F /* CITATION.cff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CITATION.cff; sourceTree = "<group>"; };
+		9617476D2C853E030027F98F /* clash_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clash_utils.cpp; sourceTree = "<group>"; };
+		9617476E2C853E030027F98F /* clash_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clash_utils.h; sourceTree = "<group>"; };
+		9617476F2C853E030027F98F /* extrusion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extrusion.cpp; sourceTree = "<group>"; };
+		961747702C853E030027F98F /* face_definition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = face_definition.cpp; sourceTree = "<group>"; };
+		961747712C853E030027F98F /* face_definition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = face_definition.h; sourceTree = "<group>"; };
+		961747722C853E030027F98F /* face.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = face.cpp; sourceTree = "<group>"; };
+		961747732C853E030027F98F /* faceset_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = faceset_helper.cpp; sourceTree = "<group>"; };
+		961747742C853E030027F98F /* IfcGeomTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcGeomTree.h; sourceTree = "<group>"; };
+		961747752C853E030027F98F /* layerset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = layerset.cpp; sourceTree = "<group>"; };
+		961747762C853E030027F98F /* layerset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layerset.h; sourceTree = "<group>"; };
+		961747772C853E030027F98F /* loft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = loft.cpp; sourceTree = "<group>"; };
+		961747782C853E030027F98F /* loop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = loop.cpp; sourceTree = "<group>"; };
+		961747792C853E030027F98F /* matrix4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrix4.cpp; sourceTree = "<group>"; };
+		9617477A2C853E030027F98F /* OpenCascadeConversionResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCascadeConversionResult.cpp; sourceTree = "<group>"; };
+		9617477B2C853E030027F98F /* OpenCascadeConversionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCascadeConversionResult.h; sourceTree = "<group>"; };
+		9617477C2C853E030027F98F /* OpenCascadeKernel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCascadeKernel.cpp; sourceTree = "<group>"; };
+		9617477D2C853E030027F98F /* OpenCascadeKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCascadeKernel.h; sourceTree = "<group>"; };
+		9617477E2C853E030027F98F /* shell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shell.cpp; sourceTree = "<group>"; };
+		9617477F2C853E030027F98F /* solid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = solid.cpp; sourceTree = "<group>"; };
+		961747802C853E030027F98F /* sweep_along_curve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sweep_along_curve.cpp; sourceTree = "<group>"; };
+		961747812C853E030027F98F /* sweep_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sweep_utils.cpp; sourceTree = "<group>"; };
+		961747822C853E030027F98F /* sweep_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sweep_utils.h; sourceTree = "<group>"; };
+		961747832C853E030027F98F /* wire_builder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wire_builder.cpp; sourceTree = "<group>"; };
+		961747842C853E030027F98F /* wire_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_builder.h; sourceTree = "<group>"; };
+		961747852C853E030027F98F /* wire_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wire_utils.cpp; sourceTree = "<group>"; };
+		961747862C853E030027F98F /* wire_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_utils.h; sourceTree = "<group>"; };
+		961747892C853E030027F98F /* bind_convert_decl.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = bind_convert_decl.i; sourceTree = "<group>"; };
+		9617478A2C853E030027F98F /* bind_convert_impl.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = bind_convert_impl.i; sourceTree = "<group>"; };
+		9617478B2C853E030027F98F /* IfcAnnotationFillArea.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcAnnotationFillArea.cpp; sourceTree = "<group>"; };
+		9617478C2C853E030027F98F /* IfcArbitraryClosedProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcArbitraryClosedProfileDef.cpp; sourceTree = "<group>"; };
+		9617478D2C853E030027F98F /* IfcArbitraryOpenProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcArbitraryOpenProfileDef.cpp; sourceTree = "<group>"; };
+		9617478E2C853E030027F98F /* IfcAxis1Placement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcAxis1Placement.cpp; sourceTree = "<group>"; };
+		9617478F2C853E030027F98F /* IfcAxis2Placement2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcAxis2Placement2D.cpp; sourceTree = "<group>"; };
+		961747902C853E030027F98F /* IfcAxis2Placement3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcAxis2Placement3D.cpp; sourceTree = "<group>"; };
+		961747912C853E030027F98F /* IfcAxis2PlacementLinear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcAxis2PlacementLinear.cpp; sourceTree = "<group>"; };
+		961747922C853E030027F98F /* IfcBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcBlock.cpp; sourceTree = "<group>"; };
+		961747932C853E030027F98F /* IfcBooleanResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcBooleanResult.cpp; sourceTree = "<group>"; };
+		961747942C853E030027F98F /* IfcBoundingBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcBoundingBox.cpp; sourceTree = "<group>"; };
+		961747952C853E030027F98F /* IfcBSplineCurveWithKnots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcBSplineCurveWithKnots.cpp; sourceTree = "<group>"; };
+		961747962C853E030027F98F /* IfcBSplineSurfaceWithKnots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcBSplineSurfaceWithKnots.cpp; sourceTree = "<group>"; };
+		961747972C853E030027F98F /* IfcCartesianPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCartesianPoint.cpp; sourceTree = "<group>"; };
+		961747982C853E030027F98F /* IfcCartesianTransformationOperator2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCartesianTransformationOperator2D.cpp; sourceTree = "<group>"; };
+		961747992C853E030027F98F /* IfcCartesianTransformationOperator3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCartesianTransformationOperator3D.cpp; sourceTree = "<group>"; };
+		9617479A2C853E030027F98F /* IfcCenterLineProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCenterLineProfileDef.cpp; sourceTree = "<group>"; };
+		9617479B2C853E030027F98F /* IfcCircle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCircle.cpp; sourceTree = "<group>"; };
+		9617479C2C853E030027F98F /* IfcCircleProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCircleProfileDef.cpp; sourceTree = "<group>"; };
+		9617479D2C853E030027F98F /* IfcCompositeCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCompositeCurve.cpp; sourceTree = "<group>"; };
+		9617479E2C853E030027F98F /* IfcCompositeProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCompositeProfileDef.cpp; sourceTree = "<group>"; };
+		9617479F2C853E030027F98F /* IfcConnectedFaceSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcConnectedFaceSet.cpp; sourceTree = "<group>"; };
+		961747A02C853E030027F98F /* IfcCraneRailAShapeProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCraneRailAShapeProfileDef.cpp; sourceTree = "<group>"; };
+		961747A12C853E030027F98F /* IfcCsgSolid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCsgSolid.cpp; sourceTree = "<group>"; };
+		961747A22C853E030027F98F /* IfcCShapeProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCShapeProfileDef.cpp; sourceTree = "<group>"; };
+		961747A32C853E030027F98F /* IfcCurveBoundedPlane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCurveBoundedPlane.cpp; sourceTree = "<group>"; };
+		961747A42C853E030027F98F /* IfcCurveSegment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCurveSegment.cpp; sourceTree = "<group>"; };
+		961747A52C853E030027F98F /* IfcCylindricalSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCylindricalSurface.cpp; sourceTree = "<group>"; };
+		961747A62C853E030027F98F /* IfcDerivedProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcDerivedProfileDef.cpp; sourceTree = "<group>"; };
+		961747A72C853E030027F98F /* IfcDirection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcDirection.cpp; sourceTree = "<group>"; };
+		961747A82C853E030027F98F /* IfcEdge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcEdge.cpp; sourceTree = "<group>"; };
+		961747A92C853E030027F98F /* IfcEdgeLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcEdgeLoop.cpp; sourceTree = "<group>"; };
+		961747AA2C853E030027F98F /* IfcEllipse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcEllipse.cpp; sourceTree = "<group>"; };
+		961747AB2C853E030027F98F /* IfcEllipseProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcEllipseProfileDef.cpp; sourceTree = "<group>"; };
+		961747AC2C853E030027F98F /* IfcExtrudedAreaSolid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcExtrudedAreaSolid.cpp; sourceTree = "<group>"; };
+		961747AD2C853E030027F98F /* IfcExtrudedAreaSolidTapered.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcExtrudedAreaSolidTapered.cpp; sourceTree = "<group>"; };
+		961747AE2C853E030027F98F /* IfcFace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcFace.cpp; sourceTree = "<group>"; };
+		961747AF2C853E030027F98F /* IfcFaceBasedSurfaceModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcFaceBasedSurfaceModel.cpp; sourceTree = "<group>"; };
+		961747B02C853E030027F98F /* IfcFixedReferenceSweptAreaSolid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcFixedReferenceSweptAreaSolid.cpp; sourceTree = "<group>"; };
+		961747B12C853E030027F98F /* IfcGeometricSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcGeometricSet.cpp; sourceTree = "<group>"; };
+		961747B22C853E030027F98F /* IfcGradientCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcGradientCurve.cpp; sourceTree = "<group>"; };
+		961747B32C853E030027F98F /* IfcHalfSpaceSolid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcHalfSpaceSolid.cpp; sourceTree = "<group>"; };
+		961747B42C853E030027F98F /* IfcIndexedPolyCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcIndexedPolyCurve.cpp; sourceTree = "<group>"; };
+		961747B52C853E030027F98F /* IfcIShapeProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcIShapeProfileDef.cpp; sourceTree = "<group>"; };
+		961747B62C853E030027F98F /* IfcLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcLine.cpp; sourceTree = "<group>"; };
+		961747B72C853E030027F98F /* IfcLShapeProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcLShapeProfileDef.cpp; sourceTree = "<group>"; };
+		961747B82C853E030027F98F /* IfcManifoldSolidBrep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcManifoldSolidBrep.cpp; sourceTree = "<group>"; };
+		961747B92C853E030027F98F /* IfcMappedItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcMappedItem.cpp; sourceTree = "<group>"; };
+		961747BA2C853E030027F98F /* IfcObjectPlacement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcObjectPlacement.cpp; sourceTree = "<group>"; };
+		961747BB2C853E030027F98F /* IfcOffsetCurveByDistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcOffsetCurveByDistance.cpp; sourceTree = "<group>"; };
+		961747BC2C853E030027F98F /* IfcOrientedEdge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcOrientedEdge.cpp; sourceTree = "<group>"; };
+		961747BD2C853E030027F98F /* IfcPlane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcPlane.cpp; sourceTree = "<group>"; };
+		961747BE2C853E030027F98F /* IfcPointByDistanceExpression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcPointByDistanceExpression.cpp; sourceTree = "<group>"; };
+		961747BF2C853E030027F98F /* IfcPolygonalBoundedHalfSpace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcPolygonalBoundedHalfSpace.cpp; sourceTree = "<group>"; };
+		961747C02C853E030027F98F /* IfcPolygonalFaceSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcPolygonalFaceSet.cpp; sourceTree = "<group>"; };
+		961747C12C853E030027F98F /* IfcPolyline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcPolyline.cpp; sourceTree = "<group>"; };
+		961747C22C853E030027F98F /* IfcPolyLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcPolyLoop.cpp; sourceTree = "<group>"; };
+		961747C32C853E030027F98F /* IfcProduct.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcProduct.cpp; sourceTree = "<group>"; };
+		961747C42C853E030027F98F /* IfcRectangleHollowProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcRectangleHollowProfileDef.cpp; sourceTree = "<group>"; };
+		961747C52C853E030027F98F /* IfcRectangleProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcRectangleProfileDef.cpp; sourceTree = "<group>"; };
+		961747C62C853E030027F98F /* IfcRectangularPyramid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcRectangularPyramid.cpp; sourceTree = "<group>"; };
+		961747C72C853E030027F98F /* IfcRectangularTrimmedSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcRectangularTrimmedSurface.cpp; sourceTree = "<group>"; };
+		961747C82C853E030027F98F /* IfcRepresentation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcRepresentation.cpp; sourceTree = "<group>"; };
+		961747C92C853E030027F98F /* IfcRevolvedAreaSolid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcRevolvedAreaSolid.cpp; sourceTree = "<group>"; };
+		961747CA2C853E030027F98F /* IfcRightCircularCone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcRightCircularCone.cpp; sourceTree = "<group>"; };
+		961747CB2C853E030027F98F /* IfcRightCircularCylinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcRightCircularCylinder.cpp; sourceTree = "<group>"; };
+		961747CC2C853E030027F98F /* IfcRoundedRectangleProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcRoundedRectangleProfileDef.cpp; sourceTree = "<group>"; };
+		961747CD2C853E030027F98F /* IfcSectionedSolidHorizontal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSectionedSolidHorizontal.cpp; sourceTree = "<group>"; };
+		961747CE2C853E030027F98F /* IfcSegmentedReferenceCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSegmentedReferenceCurve.cpp; sourceTree = "<group>"; };
+		961747CF2C853E030027F98F /* IfcShellBasedSurfaceModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcShellBasedSurfaceModel.cpp; sourceTree = "<group>"; };
+		961747D02C853E030027F98F /* IfcSphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSphere.cpp; sourceTree = "<group>"; };
+		961747D12C853E030027F98F /* IfcSphericalSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSphericalSurface.cpp; sourceTree = "<group>"; };
+		961747D22C853E030027F98F /* IfcSubedge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSubedge.cpp; sourceTree = "<group>"; };
+		961747D32C853E030027F98F /* IfcSurfaceCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSurfaceCurve.cpp; sourceTree = "<group>"; };
+		961747D42C853E030027F98F /* IfcSurfaceCurveSweptAreaSolid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSurfaceCurveSweptAreaSolid.cpp; sourceTree = "<group>"; };
+		961747D52C853E030027F98F /* IfcSurfaceOfLinearExtrusion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSurfaceOfLinearExtrusion.cpp; sourceTree = "<group>"; };
+		961747D62C853E030027F98F /* IfcSurfaceOfRevolution.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSurfaceOfRevolution.cpp; sourceTree = "<group>"; };
+		961747D72C853E030027F98F /* IfcSweptDiskSolid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSweptDiskSolid.cpp; sourceTree = "<group>"; };
+		961747D82C853E030027F98F /* IfcToroidalSurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcToroidalSurface.cpp; sourceTree = "<group>"; };
+		961747D92C853E030027F98F /* IfcTrapeziumProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcTrapeziumProfileDef.cpp; sourceTree = "<group>"; };
+		961747DA2C853E030027F98F /* IfcTriangulatedFaceSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcTriangulatedFaceSet.cpp; sourceTree = "<group>"; };
+		961747DB2C853E030027F98F /* IfcTrimmedCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcTrimmedCurve.cpp; sourceTree = "<group>"; };
+		961747DC2C853E030027F98F /* IfcTShapeProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcTShapeProfileDef.cpp; sourceTree = "<group>"; };
+		961747DD2C853E030027F98F /* IfcUShapeProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcUShapeProfileDef.cpp; sourceTree = "<group>"; };
+		961747DE2C853E030027F98F /* IfcVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcVector.cpp; sourceTree = "<group>"; };
+		961747DF2C853E030027F98F /* IfcZShapeProfileDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcZShapeProfileDef.cpp; sourceTree = "<group>"; };
+		961747E02C853E030027F98F /* mapping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapping.cpp; sourceTree = "<group>"; };
+		961747E12C853E030027F98F /* mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapping.h; sourceTree = "<group>"; };
+		961747E22C853E030027F98F /* mapping.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = mapping.i; sourceTree = "<group>"; };
+		961747E42C853E030027F98F /* Serialization.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Serialization.cpp; sourceTree = "<group>"; };
+		961747E62C853E030027F98F /* Serialization.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Serialization.cpp; sourceTree = "<group>"; };
+		961747E72C853E030027F98F /* Serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serialization.h; sourceTree = "<group>"; };
+		961747E92C853E030027F98F /* abstract_mapping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abstract_mapping.cpp; sourceTree = "<group>"; };
+		961747EA2C853E030027F98F /* abstract_mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = abstract_mapping.h; sourceTree = "<group>"; };
+		961747EB2C853E030027F98F /* AbstractKernel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractKernel.cpp; sourceTree = "<group>"; };
+		961747EC2C853E030027F98F /* AbstractKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractKernel.h; sourceTree = "<group>"; };
+		961747ED2C853E030027F98F /* CITATION.cff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CITATION.cff; sourceTree = "<group>"; };
+		961747EE2C853E030027F98F /* ConversionResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConversionResult.cpp; sourceTree = "<group>"; };
+		961747EF2C853E030027F98F /* ConversionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionResult.h; sourceTree = "<group>"; };
+		961747F02C853E030027F98F /* ConversionSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConversionSettings.cpp; sourceTree = "<group>"; };
+		961747F12C853E030027F98F /* ConversionSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionSettings.h; sourceTree = "<group>"; };
+		961747F22C853E030027F98F /* Converter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Converter.cpp; sourceTree = "<group>"; };
+		961747F32C853E030027F98F /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
+		961747F42C853E030027F98F /* empty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = empty.h; sourceTree = "<group>"; };
+		961747F52C853E030027F98F /* GeometrySerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeometrySerializer.h; sourceTree = "<group>"; };
+		961747F62C853E030027F98F /* ifc_geom_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ifc_geom_api.h; sourceTree = "<group>"; };
+		961747F72C853E030027F98F /* IfcGeomElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcGeomElement.h; sourceTree = "<group>"; };
+		961747F82C853E030027F98F /* IfcGeomFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcGeomFilter.h; sourceTree = "<group>"; };
+		961747F92C853E030027F98F /* IfcGeomIteratorSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcGeomIteratorSettings.cpp; sourceTree = "<group>"; };
+		961747FA2C853E030027F98F /* IfcGeomRenderStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcGeomRenderStyles.h; sourceTree = "<group>"; };
+		961747FB2C853E030027F98F /* IfcGeomRepresentation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcGeomRepresentation.cpp; sourceTree = "<group>"; };
+		961747FC2C853E030027F98F /* IfcGeomRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcGeomRepresentation.h; sourceTree = "<group>"; };
+		961747FD2C853E030027F98F /* Iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Iterator.h; sourceTree = "<group>"; };
+		961747FE2C853E030027F98F /* IteratorSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IteratorSettings.h; sourceTree = "<group>"; };
+		961747FF2C853E030027F98F /* mapping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapping.cpp; sourceTree = "<group>"; };
+		961748002C853E030027F98F /* piecewise_function_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = piecewise_function_impl.cpp; sourceTree = "<group>"; };
+		961748012C853E030027F98F /* piecewise_function_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = piecewise_function_impl.h; sourceTree = "<group>"; };
+		961748022C853E030027F98F /* profile_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = profile_helper.cpp; sourceTree = "<group>"; };
+		961748032C853E030027F98F /* profile_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = profile_helper.h; sourceTree = "<group>"; };
+		961748042C853E030027F98F /* Serializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serializer.h; sourceTree = "<group>"; };
+		961748052C853E030027F98F /* SurfaceStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SurfaceStyle.cpp; sourceTree = "<group>"; };
+		961748062C853E030027F98F /* taxonomy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = taxonomy.cpp; sourceTree = "<group>"; };
+		961748072C853E030027F98F /* taxonomy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = taxonomy.h; sourceTree = "<group>"; };
+		961748092C853E040027F98F /* aggregate_of_instance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aggregate_of_instance.h; sourceTree = "<group>"; };
+		9617480A2C853E040027F98F /* Argument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Argument.h; sourceTree = "<group>"; };
+		9617480B2C853E040027F98F /* ArgumentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArgumentType.h; sourceTree = "<group>"; };
+		9617480C2C853E040027F98F /* CITATION.cff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CITATION.cff; sourceTree = "<group>"; };
+		9617480D2C853E040027F98F /* ifc_parse_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ifc_parse_api.h; sourceTree = "<group>"; };
+		9617480E2C853E040027F98F /* Ifc2x3-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc2x3-definitions.h"; sourceTree = "<group>"; };
+		9617480F2C853E040027F98F /* Ifc2x3-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc2x3-schema.cpp"; sourceTree = "<group>"; };
+		961748102C853E040027F98F /* Ifc2x3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc2x3.cpp; sourceTree = "<group>"; };
+		961748112C853E040027F98F /* Ifc2x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc2x3.h; sourceTree = "<group>"; };
+		961748122C853E040027F98F /* Ifc4-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4-definitions.h"; sourceTree = "<group>"; };
+		961748132C853E040027F98F /* Ifc4-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4-schema.cpp"; sourceTree = "<group>"; };
+		961748142C853E040027F98F /* Ifc4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4.cpp; sourceTree = "<group>"; };
+		961748152C853E040027F98F /* Ifc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4.h; sourceTree = "<group>"; };
+		961748162C853E040027F98F /* Ifc4x1-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4x1-definitions.h"; sourceTree = "<group>"; };
+		961748172C853E040027F98F /* Ifc4x1-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4x1-schema.cpp"; sourceTree = "<group>"; };
+		961748182C853E040027F98F /* Ifc4x1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4x1.cpp; sourceTree = "<group>"; };
+		961748192C853E040027F98F /* Ifc4x1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4x1.h; sourceTree = "<group>"; };
+		9617481A2C853E040027F98F /* Ifc4x2-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4x2-definitions.h"; sourceTree = "<group>"; };
+		9617481B2C853E040027F98F /* Ifc4x2-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4x2-schema.cpp"; sourceTree = "<group>"; };
+		9617481C2C853E040027F98F /* Ifc4x2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4x2.cpp; sourceTree = "<group>"; };
+		9617481D2C853E040027F98F /* Ifc4x2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4x2.h; sourceTree = "<group>"; };
+		9617481E2C853E040027F98F /* Ifc4x3_add1-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4x3_add1-definitions.h"; sourceTree = "<group>"; };
+		9617481F2C853E040027F98F /* Ifc4x3_add1-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4x3_add1-schema.cpp"; sourceTree = "<group>"; };
+		961748202C853E040027F98F /* Ifc4x3_add1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4x3_add1.cpp; sourceTree = "<group>"; };
+		961748212C853E040027F98F /* Ifc4x3_add1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4x3_add1.h; sourceTree = "<group>"; };
+		961748222C853E040027F98F /* Ifc4x3_add2-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4x3_add2-definitions.h"; sourceTree = "<group>"; };
+		961748232C853E040027F98F /* Ifc4x3_add2-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4x3_add2-schema.cpp"; sourceTree = "<group>"; };
+		961748242C853E040027F98F /* Ifc4x3_add2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4x3_add2.cpp; sourceTree = "<group>"; };
+		961748252C853E040027F98F /* Ifc4x3_add2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4x3_add2.h; sourceTree = "<group>"; };
+		961748262C853E040027F98F /* Ifc4x3_rc1-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4x3_rc1-definitions.h"; sourceTree = "<group>"; };
+		961748272C853E040027F98F /* Ifc4x3_rc1-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4x3_rc1-schema.cpp"; sourceTree = "<group>"; };
+		961748282C853E040027F98F /* Ifc4x3_rc1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4x3_rc1.cpp; sourceTree = "<group>"; };
+		961748292C853E040027F98F /* Ifc4x3_rc1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4x3_rc1.h; sourceTree = "<group>"; };
+		9617482A2C853E040027F98F /* Ifc4x3_rc2-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4x3_rc2-definitions.h"; sourceTree = "<group>"; };
+		9617482B2C853E040027F98F /* Ifc4x3_rc2-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4x3_rc2-schema.cpp"; sourceTree = "<group>"; };
+		9617482C2C853E040027F98F /* Ifc4x3_rc2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4x3_rc2.cpp; sourceTree = "<group>"; };
+		9617482D2C853E040027F98F /* Ifc4x3_rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4x3_rc2.h; sourceTree = "<group>"; };
+		9617482E2C853E040027F98F /* Ifc4x3_rc3-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4x3_rc3-definitions.h"; sourceTree = "<group>"; };
+		9617482F2C853E040027F98F /* Ifc4x3_rc3-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4x3_rc3-schema.cpp"; sourceTree = "<group>"; };
+		961748302C853E040027F98F /* Ifc4x3_rc3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4x3_rc3.cpp; sourceTree = "<group>"; };
+		961748312C853E040027F98F /* Ifc4x3_rc3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4x3_rc3.h; sourceTree = "<group>"; };
+		961748322C853E040027F98F /* Ifc4x3_rc4-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4x3_rc4-definitions.h"; sourceTree = "<group>"; };
+		961748332C853E040027F98F /* Ifc4x3_rc4-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4x3_rc4-schema.cpp"; sourceTree = "<group>"; };
+		961748342C853E040027F98F /* Ifc4x3_rc4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4x3_rc4.cpp; sourceTree = "<group>"; };
+		961748352C853E040027F98F /* Ifc4x3_rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4x3_rc4.h; sourceTree = "<group>"; };
+		961748362C853E040027F98F /* Ifc4x3_tc1-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4x3_tc1-definitions.h"; sourceTree = "<group>"; };
+		961748372C853E040027F98F /* Ifc4x3_tc1-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4x3_tc1-schema.cpp"; sourceTree = "<group>"; };
+		961748382C853E040027F98F /* Ifc4x3_tc1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4x3_tc1.cpp; sourceTree = "<group>"; };
+		961748392C853E040027F98F /* Ifc4x3_tc1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4x3_tc1.h; sourceTree = "<group>"; };
+		9617483A2C853E040027F98F /* Ifc4x3-definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ifc4x3-definitions.h"; sourceTree = "<group>"; };
+		9617483B2C853E040027F98F /* Ifc4x3-schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Ifc4x3-schema.cpp"; sourceTree = "<group>"; };
+		9617483C2C853E040027F98F /* Ifc4x3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ifc4x3.cpp; sourceTree = "<group>"; };
+		9617483D2C853E040027F98F /* Ifc4x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ifc4x3.h; sourceTree = "<group>"; };
+		9617483E2C853E040027F98F /* IfcAlignmentHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcAlignmentHelper.cpp; sourceTree = "<group>"; };
+		9617483F2C853E040027F98F /* IfcAlignmentHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcAlignmentHelper.h; sourceTree = "<group>"; };
+		961748402C853E040027F98F /* IfcBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcBaseClass.h; sourceTree = "<group>"; };
+		961748412C853E040027F98F /* IfcCharacterDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcCharacterDecoder.cpp; sourceTree = "<group>"; };
+		961748422C853E040027F98F /* IfcCharacterDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcCharacterDecoder.h; sourceTree = "<group>"; };
+		961748432C853E040027F98F /* IfcEntityInstanceData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcEntityInstanceData.cpp; sourceTree = "<group>"; };
+		961748442C853E040027F98F /* IfcEntityInstanceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcEntityInstanceData.h; sourceTree = "<group>"; };
+		961748452C853E040027F98F /* IfcException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcException.h; sourceTree = "<group>"; };
+		961748462C853E040027F98F /* IfcFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcFile.cpp; sourceTree = "<group>"; };
+		961748472C853E040027F98F /* IfcFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcFile.h; sourceTree = "<group>"; };
+		961748482C853E040027F98F /* IfcGlobalId.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcGlobalId.cpp; sourceTree = "<group>"; };
+		961748492C853E040027F98F /* IfcGlobalId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcGlobalId.h; sourceTree = "<group>"; };
+		9617484A2C853E040027F98F /* IfcHierarchyHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcHierarchyHelper.cpp; sourceTree = "<group>"; };
+		9617484B2C853E040027F98F /* IfcHierarchyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcHierarchyHelper.h; sourceTree = "<group>"; };
+		9617484C2C853E040027F98F /* IfcLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcLogger.cpp; sourceTree = "<group>"; };
+		9617484D2C853E040027F98F /* IfcLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcLogger.h; sourceTree = "<group>"; };
+		9617484E2C853E040027F98F /* IfcParse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcParse.cpp; sourceTree = "<group>"; };
+		9617484F2C853E040027F98F /* IfcParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcParse.h; sourceTree = "<group>"; };
+		961748502C853E040027F98F /* IfcSchema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSchema.cpp; sourceTree = "<group>"; };
+		961748512C853E040027F98F /* IfcSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcSchema.h; sourceTree = "<group>"; };
+		961748522C853E040027F98F /* IfcSIPrefix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSIPrefix.cpp; sourceTree = "<group>"; };
+		961748532C853E040027F98F /* IfcSIPrefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcSIPrefix.h; sourceTree = "<group>"; };
+		961748542C853E040027F98F /* IfcSpfHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcSpfHeader.cpp; sourceTree = "<group>"; };
+		961748552C853E040027F98F /* IfcSpfHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcSpfHeader.h; sourceTree = "<group>"; };
+		961748562C853E040027F98F /* IfcSpfStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcSpfStream.h; sourceTree = "<group>"; };
+		961748572C853E040027F98F /* IfcUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcUtil.cpp; sourceTree = "<group>"; };
+		961748582C853E040027F98F /* IfcWrite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcWrite.cpp; sourceTree = "<group>"; };
+		961748592C853E040027F98F /* IfcWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfcWrite.h; sourceTree = "<group>"; };
+		9617485A2C853E040027F98F /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		9617485B2C853E040027F98F /* parse_ifcxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parse_ifcxml.cpp; sourceTree = "<group>"; };
+		9617485C2C853E040027F98F /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		9617485D2C853E040027F98F /* variantarray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = variantarray.h; sourceTree = "<group>"; };
+		96178C6C2C88A24A0027F98F /* libSerializers_ifc4x1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x1.a; sourceTree = "<group>"; };
+		96178C6D2C88A24A0027F98F /* libSerializers_ifc4x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x3.a; sourceTree = "<group>"; };
+		96178C6E2C88A24B0027F98F /* libgeometry_serializer_ifc4x2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x2.a; sourceTree = "<group>"; };
+		96178C6F2C88A24B0027F98F /* libgeometry_serializer_ifc4x3_add1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x3_add1.a; sourceTree = "<group>"; };
+		96178C702C88A24B0027F98F /* libSerializers_ifc2x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc2x3.a; sourceTree = "<group>"; };
+		96178C712C88A24C0027F98F /* libgeometry_serializer_ifc4x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x3.a; sourceTree = "<group>"; };
+		96178C722C88A24C0027F98F /* libgeometry_serializer_ifc4x3_tc1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x3_tc1.a; sourceTree = "<group>"; };
+		96178C732C88A24D0027F98F /* libgeometry_serializer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer.a; sourceTree = "<group>"; };
+		96178C742C88A24D0027F98F /* libgeometry_serializer_ifc4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4.a; sourceTree = "<group>"; };
+		96178C752C88A24E0027F98F /* libSerializers_ifc4x3_tc1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x3_tc1.a; sourceTree = "<group>"; };
+		96178C762C88A24E0027F98F /* libgeometry_serializer_ifc4x3_add2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x3_add2.a; sourceTree = "<group>"; };
+		96178C772C88A24F0027F98F /* libSerializers_ifc4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4.a; sourceTree = "<group>"; };
+		96178C782C88A24F0027F98F /* libgeometry_serializer_ifc2x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc2x3.a; sourceTree = "<group>"; };
+		96178C792C88A2500027F98F /* libgeometry_kernel_opencascade.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_kernel_opencascade.a; sourceTree = "<group>"; };
+		96178C7A2C88A2500027F98F /* libgeometry_mapping_ifc4x3_tc1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x3_tc1.a; sourceTree = "<group>"; };
+		96178C7B2C88A2510027F98F /* libgeometry_mapping_ifc4x1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x1.a; sourceTree = "<group>"; };
+		96178C7C2C88A2510027F98F /* libSerializers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers.a; sourceTree = "<group>"; };
+		96178C7D2C88A2520027F98F /* libSerializers_ifc4x2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x2.a; sourceTree = "<group>"; };
+		96178C7E2C88A2520027F98F /* libgeometry_mapping_ifc2x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc2x3.a; sourceTree = "<group>"; };
+		96178C7F2C88A2530027F98F /* libgeometry_kernel_cgal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_kernel_cgal.a; sourceTree = "<group>"; };
+		96178C802C88A2530027F98F /* libgeometry_mapping_ifc4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4.a; sourceTree = "<group>"; };
+		96178C812C88A2540027F98F /* libgeometry_mapping_ifc4x2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x2.a; sourceTree = "<group>"; };
+		96178C822C88A2540027F98F /* libgeometry_kernel_cgal_simple.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_kernel_cgal_simple.a; sourceTree = "<group>"; };
+		96178C832C88A2550027F98F /* libgeometry_serializer_ifc4x1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x1.a; sourceTree = "<group>"; };
+		96178C842C88A2550027F98F /* libgeometry_mapping_ifc4x3_add2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x3_add2.a; sourceTree = "<group>"; };
+		96178C852C88A2560027F98F /* libSerializers_ifc4x3_add1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x3_add1.a; sourceTree = "<group>"; };
+		96178C862C88A2560027F98F /* libgeometry_mapping_ifc4x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x3.a; sourceTree = "<group>"; };
+		96178C872C88A2570027F98F /* libgeometry_mapping_ifc4x3_add1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x3_add1.a; sourceTree = "<group>"; };
+		96178C882C88A2570027F98F /* libSerializers_ifc4x3_add2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x3_add2.a; sourceTree = "<group>"; };
+		96178CA62C88A2800027F98F /* CITATION.cff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CITATION.cff; sourceTree = "<group>"; };
+		96178CA72C88A2800027F98F /* IfcJni.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcJni.cpp; sourceTree = "<group>"; };
+		96178CA82C88A2800027F98F /* org_ifcopenshell_IfcOpenShellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_ifcopenshell_IfcOpenShellModel.h; sourceTree = "<group>"; };
+		96178CAA2C88A2810027F98F /* IfcGeomServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcGeomServer.cpp; sourceTree = "<group>"; };
+		96178CAB2C88A2810027F98F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96178CAD2C88A2810027F98F /* XmlSerializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XmlSerializer.cpp; sourceTree = "<group>"; };
+		96178CAE2C88A2810027F98F /* XmlSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlSerializer.h; sourceTree = "<group>"; };
+		96178CB02C88A2810027F98F /* CITATION.cff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CITATION.cff; sourceTree = "<group>"; };
+		96178CB12C88A2810027F98F /* ColladaSerializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColladaSerializer.cpp; sourceTree = "<group>"; };
+		96178CB22C88A2810027F98F /* ColladaSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColladaSerializer.h; sourceTree = "<group>"; };
+		96178CB32C88A2810027F98F /* GltfSerializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GltfSerializer.cpp; sourceTree = "<group>"; };
+		96178CB42C88A2810027F98F /* GltfSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GltfSerializer.h; sourceTree = "<group>"; };
+		96178CB52C88A2810027F98F /* HdfSerializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HdfSerializer.cpp; sourceTree = "<group>"; };
+		96178CB62C88A2810027F98F /* HdfSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HdfSerializer.h; sourceTree = "<group>"; };
+		96178CB72C88A2810027F98F /* IgesSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgesSerializer.h; sourceTree = "<group>"; };
+		96178CB82C88A2810027F98F /* OpenCascadeBasedSerializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCascadeBasedSerializer.cpp; sourceTree = "<group>"; };
+		96178CB92C88A2810027F98F /* OpenCascadeBasedSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCascadeBasedSerializer.h; sourceTree = "<group>"; };
+		96178CBA2C88A2810027F98F /* serializers_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serializers_api.h; sourceTree = "<group>"; };
+		96178CBB2C88A2810027F98F /* StepSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepSerializer.h; sourceTree = "<group>"; };
+		96178CBC2C88A2810027F98F /* SvgSerializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SvgSerializer.cpp; sourceTree = "<group>"; };
+		96178CBD2C88A2810027F98F /* SvgSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvgSerializer.h; sourceTree = "<group>"; };
+		96178CBE2C88A2810027F98F /* USDSerializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USDSerializer.cpp; sourceTree = "<group>"; };
+		96178CBF2C88A2810027F98F /* USDSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USDSerializer.h; sourceTree = "<group>"; };
+		96178CC02C88A2810027F98F /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		96178CC12C88A2810027F98F /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		96178CC22C88A2810027F98F /* WavefrontObjSerializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WavefrontObjSerializer.cpp; sourceTree = "<group>"; };
+		96178CC32C88A2810027F98F /* WavefrontObjSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavefrontObjSerializer.h; sourceTree = "<group>"; };
+		96178CC42C88A2810027F98F /* XmlSerializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XmlSerializer.cpp; sourceTree = "<group>"; };
+		96178CC52C88A2810027F98F /* XmlSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlSerializer.h; sourceTree = "<group>"; };
+		96178CC72C88A2810027F98F /* type_conversion.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = type_conversion.i; sourceTree = "<group>"; };
+		96178CC82C88A2810027F98F /* typemaps_in.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = typemaps_in.i; sourceTree = "<group>"; };
+		96178CC92C88A2810027F98F /* typemaps_out.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = typemaps_out.i; sourceTree = "<group>"; };
+		96178CCB2C88A2810027F98F /* CITATION.cff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CITATION.cff; sourceTree = "<group>"; };
+		96178CCC2C88A2810027F98F /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		96178CCD2C88A2810027F98F /* IfcGeomWrapper.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = IfcGeomWrapper.i; sourceTree = "<group>"; };
+		96178CCE2C88A2810027F98F /* IfcParseWrapper.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = IfcParseWrapper.i; sourceTree = "<group>"; };
+		96178CCF2C88A2810027F98F /* IfcPython.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = IfcPython.i; sourceTree = "<group>"; };
+		96220F162C9747260021A371 /* GeometryConverter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GeometryConverter.mm; sourceTree = "<group>"; };
+		96220F1B2C9759750021A371 /* GeometryConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeometryConverter.h; sourceTree = "<group>"; };
+		96A636782C8901F000B3E188 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D0DF0822BD6533E00C680EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96178C8F2C88A2570027F98F /* libgeometry_serializer_ifc4x3_tc1.a in Frameworks */,
+				960575FF2C8FC391009AA030 /* libTKCDF.a in Frameworks */,
+				96178C9A2C88A2570027F98F /* libSerializers_ifc4x2.a in Frameworks */,
+				960576032C8FC391009AA030 /* libTKXSDRAW.a in Frameworks */,
+				9605760F2C8FC391009AA030 /* libTKDraw.a in Frameworks */,
+				960576162C8FC391009AA030 /* libTKDESTL.a in Frameworks */,
+				960575FC2C8FC391009AA030 /* libTKXDEDRAW.a in Frameworks */,
+				960576012C8FC391009AA030 /* libTKDEVRML.a in Frameworks */,
+				96178C922C88A2570027F98F /* libSerializers_ifc4x3_tc1.a in Frameworks */,
+				9605760B2C8FC391009AA030 /* libTKBO.a in Frameworks */,
+				960576022C8FC391009AA030 /* libTKG2d.a in Frameworks */,
+				960575E02C8FC391009AA030 /* libTKStdL.a in Frameworks */,
+				960576102C8FC391009AA030 /* libTKDE.a in Frameworks */,
+				960576042C8FC391009AA030 /* libTKTObjDRAW.a in Frameworks */,
+				961081242C8C498B00B617E9 /* libgmp.a in Frameworks */,
+				9605761B2C8FC392009AA030 /* libTKQADraw.a in Frameworks */,
+				96178C8D2C88A2570027F98F /* libSerializers_ifc2x3.a in Frameworks */,
+				96178CA52C88A2570027F98F /* libSerializers_ifc4x3_add2.a in Frameworks */,
+				960575E12C8FC391009AA030 /* libTKBin.a in Frameworks */,
+				96178C892C88A2570027F98F /* libSerializers_ifc4x1.a in Frameworks */,
+				960576182C8FC392009AA030 /* libTKOpenGl.a in Frameworks */,
+				961081262C8C4A6F00B617E9 /* libmpfr.a in Frameworks */,
+				960575F92C8FC391009AA030 /* libTKMath.a in Frameworks */,
+				96178C9D2C88A2570027F98F /* libgeometry_mapping_ifc4.a in Frameworks */,
+				960576062C8FC391009AA030 /* libTKBinXCAF.a in Frameworks */,
+				96178CA32C88A2570027F98F /* libgeometry_mapping_ifc4x3.a in Frameworks */,
+				9605760C2C8FC391009AA030 /* libTKDEOBJ.a in Frameworks */,
+				960576122C8FC391009AA030 /* libTKMeshVS.a in Frameworks */,
+				96178C8E2C88A2570027F98F /* libgeometry_serializer_ifc4x3.a in Frameworks */,
+				96178C9B2C88A2570027F98F /* libgeometry_mapping_ifc2x3.a in Frameworks */,
+				960575EE2C8FC391009AA030 /* libTKXCAF.a in Frameworks */,
+				960575E22C8FC391009AA030 /* libTKXSDRAWDE.a in Frameworks */,
+				9605760A2C8FC391009AA030 /* libTKFeat.a in Frameworks */,
+				96178CA22C88A2570027F98F /* libSerializers_ifc4x3_add1.a in Frameworks */,
+				960575E32C8FC391009AA030 /* libTKXSDRAWGLTF.a in Frameworks */,
+				960575EF2C8FC391009AA030 /* libTKXSBase.a in Frameworks */,
+				9617475F2C853DDB0027F98F /* libIfcParse.a in Frameworks */,
+				960576192C8FC392009AA030 /* libTKBinL.a in Frameworks */,
+				960575E82C8FC391009AA030 /* libTKDECascade.a in Frameworks */,
+				96178C952C88A2570027F98F /* libgeometry_serializer_ifc2x3.a in Frameworks */,
+				9605761C2C8FC392009AA030 /* libTKViewerTest.a in Frameworks */,
+				960576172C8FC391009AA030 /* libTKShHealing.a in Frameworks */,
+				960575ED2C8FC391009AA030 /* libTKDEGLTF.a in Frameworks */,
+				9605760D2C8FC391009AA030 /* libTKBinTObj.a in Frameworks */,
+				96178C992C88A2570027F98F /* libSerializers.a in Frameworks */,
+				960575E92C8FC391009AA030 /* libTKG3d.a in Frameworks */,
+				96178C8C2C88A2570027F98F /* libgeometry_serializer_ifc4x3_add1.a in Frameworks */,
+				96178C9C2C88A2570027F98F /* libgeometry_kernel_cgal.a in Frameworks */,
+				9605761E2C8FC392009AA030 /* libTKRWMesh.a in Frameworks */,
+				960576212C8FC392009AA030 /* libTKOpenGlTest.a in Frameworks */,
+				960576132C8FC391009AA030 /* libTKXmlL.a in Frameworks */,
+				960576002C8FC391009AA030 /* libTKLCAF.a in Frameworks */,
+				960576202C8FC392009AA030 /* libTKDEPLY.a in Frameworks */,
+				960575E72C8FC391009AA030 /* libTKTopAlgo.a in Frameworks */,
+				961081232C8C498B00B617E9 /* libgmpxx.a in Frameworks */,
+				96178C8B2C88A2570027F98F /* libgeometry_serializer_ifc4x2.a in Frameworks */,
+				96178C9F2C88A2570027F98F /* libgeometry_kernel_cgal_simple.a in Frameworks */,
+				96178CA12C88A2570027F98F /* libgeometry_mapping_ifc4x3_add2.a in Frameworks */,
+				960575F62C8FC391009AA030 /* libTKDCAF.a in Frameworks */,
+				9605761D2C8FC392009AA030 /* libTKCAF.a in Frameworks */,
+				96178C972C88A2570027F98F /* libgeometry_mapping_ifc4x3_tc1.a in Frameworks */,
+				960575F52C8FC391009AA030 /* libTKTObj.a in Frameworks */,
+				960575E52C8FC391009AA030 /* libTKXSDRAWIGES.a in Frameworks */,
+				960575DF2C8FC391009AA030 /* libTKXmlTObj.a in Frameworks */,
+				960576152C8FC391009AA030 /* libTKService.a in Frameworks */,
+				96178C8A2C88A2570027F98F /* libSerializers_ifc4x3.a in Frameworks */,
+				960575EB2C8FC391009AA030 /* libTKXSDRAWOBJ.a in Frameworks */,
+				960576092C8FC391009AA030 /* libTKTopTest.a in Frameworks */,
+				960576112C8FC391009AA030 /* libTKXMesh.a in Frameworks */,
+				960576142C8FC391009AA030 /* libTKFillet.a in Frameworks */,
+				96178C9E2C88A2570027F98F /* libgeometry_mapping_ifc4x2.a in Frameworks */,
+				960575FB2C8FC391009AA030 /* libTKGeomAlgo.a in Frameworks */,
+				9605761A2C8FC392009AA030 /* libTKStd.a in Frameworks */,
+				960575F12C8FC391009AA030 /* libTKDEIGES.a in Frameworks */,
+				960575EC2C8FC391009AA030 /* libTKXSDRAWPLY.a in Frameworks */,
+				960575F02C8FC391009AA030 /* libTKernel.a in Frameworks */,
+				96178C982C88A2570027F98F /* libgeometry_mapping_ifc4x1.a in Frameworks */,
+				960575EA2C8FC391009AA030 /* libTKOffset.a in Frameworks */,
+				960575FE2C8FC391009AA030 /* libTKPrim.a in Frameworks */,
+				96178C942C88A2570027F98F /* libSerializers_ifc4.a in Frameworks */,
+				960575F72C8FC391009AA030 /* libTKGeomBase.a in Frameworks */,
+				96178CA02C88A2570027F98F /* libgeometry_serializer_ifc4x1.a in Frameworks */,
+				9605760E2C8FC391009AA030 /* libTKXSDRAWVRML.a in Frameworks */,
+				960575F82C8FC391009AA030 /* libTKVCAF.a in Frameworks */,
+				960576082C8FC391009AA030 /* libTKV3d.a in Frameworks */,
+				96178C912C88A2570027F98F /* libgeometry_serializer_ifc4.a in Frameworks */,
+				9605761F2C8FC392009AA030 /* libTKBRep.a in Frameworks */,
+				960575E62C8FC391009AA030 /* libTKXSDRAWSTL.a in Frameworks */,
+				96178C932C88A2570027F98F /* libgeometry_serializer_ifc4x3_add2.a in Frameworks */,
+				960575F22C8FC391009AA030 /* libTKBool.a in Frameworks */,
+				9617475E2C853DDB0027F98F /* libIfcGeom.a in Frameworks */,
+				960576052C8FC391009AA030 /* libTKXml.a in Frameworks */,
+				96178CA42C88A2570027F98F /* libgeometry_mapping_ifc4x3_add1.a in Frameworks */,
+				960575F32C8FC391009AA030 /* libTKMesh.a in Frameworks */,
+				96178C962C88A2570027F98F /* libgeometry_kernel_opencascade.a in Frameworks */,
+				960575F42C8FC391009AA030 /* libTKExpress.a in Frameworks */,
+				960575FD2C8FC391009AA030 /* libTKHLR.a in Frameworks */,
+				960575FA2C8FC391009AA030 /* libTKDESTEP.a in Frameworks */,
+				960575E42C8FC391009AA030 /* libTKXmlXCAF.a in Frameworks */,
+				960576072C8FC391009AA030 /* libTKXSDRAWSTEP.a in Frameworks */,
+				96178C902C88A2570027F98F /* libgeometry_serializer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D0DF07C2BD6533E00C680EF = {
+			isa = PBXGroup;
+			children = (
+				0D0DF0872BD6533E00C680EF /* IFC Simple View */,
+				0D0DF0862BD6533E00C680EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D0DF0862BD6533E00C680EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D0DF0852BD6533E00C680EF /* IFC SimpleView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D0DF0872BD6533E00C680EF /* IFC Simple View */ = {
+			isa = PBXGroup;
+			children = (
+				96178CAC2C88A2810027F98F /* ifcgeomserver */,
+				96178CA92C88A2800027F98F /* ifcjni */,
+				96178CD02C88A2810027F98F /* ifcwrap */,
+				96178CC62C88A2810027F98F /* serializers */,
+				961748082C853E030027F98F /* ifcgeom */,
+				9617485E2C853E040027F98F /* ifcparse */,
+				96178C6B2C88A2340027F98F /* lib */,
+				0D0DF0882BD6533E00C680EF /* IFCSimpleView.swift */,
+				0D86EBEC2BE29100007522E4 /* ViewModel */,
+				0D86EBED2BE2912F007522E4 /* Model */,
+				0D86EBEB2BE29095007522E4 /* View */,
+				0D0DF08C2BD6534000C680EF /* Assets.xcassets */,
+				0D0DF0912BD6534000C680EF /* IFCSimpleView.entitlements */,
+				0D0DF08E2BD6534000C680EF /* Preview Content */,
+				96A636782C8901F000B3E188 /* module.modulemap */,
+			);
+			path = "IFC Simple View";
+			sourceTree = "<group>";
+		};
+		0D0DF08E2BD6534000C680EF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D0DF08F2BD6534000C680EF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D86EBEB2BE29095007522E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D0DF08A2BD6533E00C680EF /* MainView.swift */,
+				0D86EBE72BE021B8007522E4 /* SceneView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D86EBEC2BE29100007522E4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D0DF0992BD65AD800C680EF /* MainViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0D86EBED2BE2912F007522E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96220F162C9747260021A371 /* GeometryConverter.mm */,
+				96220F1B2C9759750021A371 /* GeometryConverter.h */,
+				0D86EBE92BE29080007522E4 /* SceneViewWrapper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		961747652C853E030027F98F /* cgal */ = {
+			isa = PBXGroup;
+			children = (
+				961747602C853E030027F98F /* CgalConversionResult.cpp */,
+				961747612C853E030027F98F /* CgalConversionResult.h */,
+				961747622C853E030027F98F /* CgalKernel.cpp */,
+				961747632C853E030027F98F /* CgalKernel.h */,
+				961747642C853E030027F98F /* nef_to_halfspace_tree.h */,
+			);
+			path = cgal;
+			sourceTree = "<group>";
+		};
+		961747872C853E030027F98F /* opencascade */ = {
+			isa = PBXGroup;
+			children = (
+				961747662C853E030027F98F /* base_utils.cpp */,
+				961747672C853E030027F98F /* base_utils.h */,
+				961747682C853E030027F98F /* boolean_result.cpp */,
+				961747692C853E030027F98F /* boolean_utils.cpp */,
+				9617476A2C853E030027F98F /* boolean_utils.h */,
+				9617476B2C853E030027F98F /* bspline_surface.cpp */,
+				9617476C2C853E030027F98F /* CITATION.cff */,
+				9617476D2C853E030027F98F /* clash_utils.cpp */,
+				9617476E2C853E030027F98F /* clash_utils.h */,
+				9617476F2C853E030027F98F /* extrusion.cpp */,
+				961747702C853E030027F98F /* face_definition.cpp */,
+				961747712C853E030027F98F /* face_definition.h */,
+				961747722C853E030027F98F /* face.cpp */,
+				961747732C853E030027F98F /* faceset_helper.cpp */,
+				961747742C853E030027F98F /* IfcGeomTree.h */,
+				961747752C853E030027F98F /* layerset.cpp */,
+				961747762C853E030027F98F /* layerset.h */,
+				961747772C853E030027F98F /* loft.cpp */,
+				961747782C853E030027F98F /* loop.cpp */,
+				961747792C853E030027F98F /* matrix4.cpp */,
+				9617477A2C853E030027F98F /* OpenCascadeConversionResult.cpp */,
+				9617477B2C853E030027F98F /* OpenCascadeConversionResult.h */,
+				9617477C2C853E030027F98F /* OpenCascadeKernel.cpp */,
+				9617477D2C853E030027F98F /* OpenCascadeKernel.h */,
+				9617477E2C853E030027F98F /* shell.cpp */,
+				9617477F2C853E030027F98F /* solid.cpp */,
+				961747802C853E030027F98F /* sweep_along_curve.cpp */,
+				961747812C853E030027F98F /* sweep_utils.cpp */,
+				961747822C853E030027F98F /* sweep_utils.h */,
+				961747832C853E030027F98F /* wire_builder.cpp */,
+				961747842C853E030027F98F /* wire_builder.h */,
+				961747852C853E030027F98F /* wire_utils.cpp */,
+				961747862C853E030027F98F /* wire_utils.h */,
+			);
+			path = opencascade;
+			sourceTree = "<group>";
+		};
+		961747882C853E030027F98F /* kernels */ = {
+			isa = PBXGroup;
+			children = (
+				961747652C853E030027F98F /* cgal */,
+				961747872C853E030027F98F /* opencascade */,
+			);
+			path = kernels;
+			sourceTree = "<group>";
+		};
+		961747E32C853E030027F98F /* mapping */ = {
+			isa = PBXGroup;
+			children = (
+				961747892C853E030027F98F /* bind_convert_decl.i */,
+				9617478A2C853E030027F98F /* bind_convert_impl.i */,
+				9617478B2C853E030027F98F /* IfcAnnotationFillArea.cpp */,
+				9617478C2C853E030027F98F /* IfcArbitraryClosedProfileDef.cpp */,
+				9617478D2C853E030027F98F /* IfcArbitraryOpenProfileDef.cpp */,
+				9617478E2C853E030027F98F /* IfcAxis1Placement.cpp */,
+				9617478F2C853E030027F98F /* IfcAxis2Placement2D.cpp */,
+				961747902C853E030027F98F /* IfcAxis2Placement3D.cpp */,
+				961747912C853E030027F98F /* IfcAxis2PlacementLinear.cpp */,
+				961747922C853E030027F98F /* IfcBlock.cpp */,
+				961747932C853E030027F98F /* IfcBooleanResult.cpp */,
+				961747942C853E030027F98F /* IfcBoundingBox.cpp */,
+				961747952C853E030027F98F /* IfcBSplineCurveWithKnots.cpp */,
+				961747962C853E030027F98F /* IfcBSplineSurfaceWithKnots.cpp */,
+				961747972C853E030027F98F /* IfcCartesianPoint.cpp */,
+				961747982C853E030027F98F /* IfcCartesianTransformationOperator2D.cpp */,
+				961747992C853E030027F98F /* IfcCartesianTransformationOperator3D.cpp */,
+				9617479A2C853E030027F98F /* IfcCenterLineProfileDef.cpp */,
+				9617479B2C853E030027F98F /* IfcCircle.cpp */,
+				9617479C2C853E030027F98F /* IfcCircleProfileDef.cpp */,
+				9617479D2C853E030027F98F /* IfcCompositeCurve.cpp */,
+				9617479E2C853E030027F98F /* IfcCompositeProfileDef.cpp */,
+				9617479F2C853E030027F98F /* IfcConnectedFaceSet.cpp */,
+				961747A02C853E030027F98F /* IfcCraneRailAShapeProfileDef.cpp */,
+				961747A12C853E030027F98F /* IfcCsgSolid.cpp */,
+				961747A22C853E030027F98F /* IfcCShapeProfileDef.cpp */,
+				961747A32C853E030027F98F /* IfcCurveBoundedPlane.cpp */,
+				961747A42C853E030027F98F /* IfcCurveSegment.cpp */,
+				961747A52C853E030027F98F /* IfcCylindricalSurface.cpp */,
+				961747A62C853E030027F98F /* IfcDerivedProfileDef.cpp */,
+				961747A72C853E030027F98F /* IfcDirection.cpp */,
+				961747A82C853E030027F98F /* IfcEdge.cpp */,
+				961747A92C853E030027F98F /* IfcEdgeLoop.cpp */,
+				961747AA2C853E030027F98F /* IfcEllipse.cpp */,
+				961747AB2C853E030027F98F /* IfcEllipseProfileDef.cpp */,
+				961747AC2C853E030027F98F /* IfcExtrudedAreaSolid.cpp */,
+				961747AD2C853E030027F98F /* IfcExtrudedAreaSolidTapered.cpp */,
+				961747AE2C853E030027F98F /* IfcFace.cpp */,
+				961747AF2C853E030027F98F /* IfcFaceBasedSurfaceModel.cpp */,
+				961747B02C853E030027F98F /* IfcFixedReferenceSweptAreaSolid.cpp */,
+				961747B12C853E030027F98F /* IfcGeometricSet.cpp */,
+				961747B22C853E030027F98F /* IfcGradientCurve.cpp */,
+				961747B32C853E030027F98F /* IfcHalfSpaceSolid.cpp */,
+				961747B42C853E030027F98F /* IfcIndexedPolyCurve.cpp */,
+				961747B52C853E030027F98F /* IfcIShapeProfileDef.cpp */,
+				961747B62C853E030027F98F /* IfcLine.cpp */,
+				961747B72C853E030027F98F /* IfcLShapeProfileDef.cpp */,
+				961747B82C853E030027F98F /* IfcManifoldSolidBrep.cpp */,
+				961747B92C853E030027F98F /* IfcMappedItem.cpp */,
+				961747BA2C853E030027F98F /* IfcObjectPlacement.cpp */,
+				961747BB2C853E030027F98F /* IfcOffsetCurveByDistance.cpp */,
+				961747BC2C853E030027F98F /* IfcOrientedEdge.cpp */,
+				961747BD2C853E030027F98F /* IfcPlane.cpp */,
+				961747BE2C853E030027F98F /* IfcPointByDistanceExpression.cpp */,
+				961747BF2C853E030027F98F /* IfcPolygonalBoundedHalfSpace.cpp */,
+				961747C02C853E030027F98F /* IfcPolygonalFaceSet.cpp */,
+				961747C12C853E030027F98F /* IfcPolyline.cpp */,
+				961747C22C853E030027F98F /* IfcPolyLoop.cpp */,
+				961747C32C853E030027F98F /* IfcProduct.cpp */,
+				961747C42C853E030027F98F /* IfcRectangleHollowProfileDef.cpp */,
+				961747C52C853E030027F98F /* IfcRectangleProfileDef.cpp */,
+				961747C62C853E030027F98F /* IfcRectangularPyramid.cpp */,
+				961747C72C853E030027F98F /* IfcRectangularTrimmedSurface.cpp */,
+				961747C82C853E030027F98F /* IfcRepresentation.cpp */,
+				961747C92C853E030027F98F /* IfcRevolvedAreaSolid.cpp */,
+				961747CA2C853E030027F98F /* IfcRightCircularCone.cpp */,
+				961747CB2C853E030027F98F /* IfcRightCircularCylinder.cpp */,
+				961747CC2C853E030027F98F /* IfcRoundedRectangleProfileDef.cpp */,
+				961747CD2C853E030027F98F /* IfcSectionedSolidHorizontal.cpp */,
+				961747CE2C853E030027F98F /* IfcSegmentedReferenceCurve.cpp */,
+				961747CF2C853E030027F98F /* IfcShellBasedSurfaceModel.cpp */,
+				961747D02C853E030027F98F /* IfcSphere.cpp */,
+				961747D12C853E030027F98F /* IfcSphericalSurface.cpp */,
+				961747D22C853E030027F98F /* IfcSubedge.cpp */,
+				961747D32C853E030027F98F /* IfcSurfaceCurve.cpp */,
+				961747D42C853E030027F98F /* IfcSurfaceCurveSweptAreaSolid.cpp */,
+				961747D52C853E030027F98F /* IfcSurfaceOfLinearExtrusion.cpp */,
+				961747D62C853E030027F98F /* IfcSurfaceOfRevolution.cpp */,
+				961747D72C853E030027F98F /* IfcSweptDiskSolid.cpp */,
+				961747D82C853E030027F98F /* IfcToroidalSurface.cpp */,
+				961747D92C853E030027F98F /* IfcTrapeziumProfileDef.cpp */,
+				961747DA2C853E030027F98F /* IfcTriangulatedFaceSet.cpp */,
+				961747DB2C853E030027F98F /* IfcTrimmedCurve.cpp */,
+				961747DC2C853E030027F98F /* IfcTShapeProfileDef.cpp */,
+				961747DD2C853E030027F98F /* IfcUShapeProfileDef.cpp */,
+				961747DE2C853E030027F98F /* IfcVector.cpp */,
+				961747DF2C853E030027F98F /* IfcZShapeProfileDef.cpp */,
+				961747E02C853E030027F98F /* mapping.cpp */,
+				961747E12C853E030027F98F /* mapping.h */,
+				961747E22C853E030027F98F /* mapping.i */,
+			);
+			path = mapping;
+			sourceTree = "<group>";
+		};
+		961747E52C853E030027F98F /* schema */ = {
+			isa = PBXGroup;
+			children = (
+				961747E42C853E030027F98F /* Serialization.cpp */,
+			);
+			path = schema;
+			sourceTree = "<group>";
+		};
+		961747E82C853E030027F98F /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				961747E52C853E030027F98F /* schema */,
+				961747E62C853E030027F98F /* Serialization.cpp */,
+				961747E72C853E030027F98F /* Serialization.h */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
+		961748082C853E030027F98F /* ifcgeom */ = {
+			isa = PBXGroup;
+			children = (
+				961747882C853E030027F98F /* kernels */,
+				961747E32C853E030027F98F /* mapping */,
+				961747E82C853E030027F98F /* Serialization */,
+				961747E92C853E030027F98F /* abstract_mapping.cpp */,
+				961747EA2C853E030027F98F /* abstract_mapping.h */,
+				961747EB2C853E030027F98F /* AbstractKernel.cpp */,
+				961747EC2C853E030027F98F /* AbstractKernel.h */,
+				961747ED2C853E030027F98F /* CITATION.cff */,
+				961747EE2C853E030027F98F /* ConversionResult.cpp */,
+				961747EF2C853E030027F98F /* ConversionResult.h */,
+				961747F02C853E030027F98F /* ConversionSettings.cpp */,
+				961747F12C853E030027F98F /* ConversionSettings.h */,
+				961747F22C853E030027F98F /* Converter.cpp */,
+				961747F32C853E030027F98F /* Converter.h */,
+				961747F42C853E030027F98F /* empty.h */,
+				961747F52C853E030027F98F /* GeometrySerializer.h */,
+				961747F62C853E030027F98F /* ifc_geom_api.h */,
+				961747F72C853E030027F98F /* IfcGeomElement.h */,
+				961747F82C853E030027F98F /* IfcGeomFilter.h */,
+				961747F92C853E030027F98F /* IfcGeomIteratorSettings.cpp */,
+				961747FA2C853E030027F98F /* IfcGeomRenderStyles.h */,
+				961747FB2C853E030027F98F /* IfcGeomRepresentation.cpp */,
+				961747FC2C853E030027F98F /* IfcGeomRepresentation.h */,
+				961747FD2C853E030027F98F /* Iterator.h */,
+				961747FE2C853E030027F98F /* IteratorSettings.h */,
+				961747FF2C853E030027F98F /* mapping.cpp */,
+				961748002C853E030027F98F /* piecewise_function_impl.cpp */,
+				961748012C853E030027F98F /* piecewise_function_impl.h */,
+				961748022C853E030027F98F /* profile_helper.cpp */,
+				961748032C853E030027F98F /* profile_helper.h */,
+				961748042C853E030027F98F /* Serializer.h */,
+				961748052C853E030027F98F /* SurfaceStyle.cpp */,
+				961748062C853E030027F98F /* taxonomy.cpp */,
+				961748072C853E030027F98F /* taxonomy.h */,
+			);
+			path = ifcgeom;
+			sourceTree = "<group>";
+		};
+		9617485E2C853E040027F98F /* ifcparse */ = {
+			isa = PBXGroup;
+			children = (
+				961748092C853E040027F98F /* aggregate_of_instance.h */,
+				9617480A2C853E040027F98F /* Argument.h */,
+				9617480B2C853E040027F98F /* ArgumentType.h */,
+				9617480C2C853E040027F98F /* CITATION.cff */,
+				9617480D2C853E040027F98F /* ifc_parse_api.h */,
+				9617480E2C853E040027F98F /* Ifc2x3-definitions.h */,
+				9617480F2C853E040027F98F /* Ifc2x3-schema.cpp */,
+				961748102C853E040027F98F /* Ifc2x3.cpp */,
+				961748112C853E040027F98F /* Ifc2x3.h */,
+				961748122C853E040027F98F /* Ifc4-definitions.h */,
+				961748132C853E040027F98F /* Ifc4-schema.cpp */,
+				961748142C853E040027F98F /* Ifc4.cpp */,
+				961748152C853E040027F98F /* Ifc4.h */,
+				961748162C853E040027F98F /* Ifc4x1-definitions.h */,
+				961748172C853E040027F98F /* Ifc4x1-schema.cpp */,
+				961748182C853E040027F98F /* Ifc4x1.cpp */,
+				961748192C853E040027F98F /* Ifc4x1.h */,
+				9617481A2C853E040027F98F /* Ifc4x2-definitions.h */,
+				9617481B2C853E040027F98F /* Ifc4x2-schema.cpp */,
+				9617481C2C853E040027F98F /* Ifc4x2.cpp */,
+				9617481D2C853E040027F98F /* Ifc4x2.h */,
+				9617481E2C853E040027F98F /* Ifc4x3_add1-definitions.h */,
+				9617481F2C853E040027F98F /* Ifc4x3_add1-schema.cpp */,
+				961748202C853E040027F98F /* Ifc4x3_add1.cpp */,
+				961748212C853E040027F98F /* Ifc4x3_add1.h */,
+				961748222C853E040027F98F /* Ifc4x3_add2-definitions.h */,
+				961748232C853E040027F98F /* Ifc4x3_add2-schema.cpp */,
+				961748242C853E040027F98F /* Ifc4x3_add2.cpp */,
+				961748252C853E040027F98F /* Ifc4x3_add2.h */,
+				961748262C853E040027F98F /* Ifc4x3_rc1-definitions.h */,
+				961748272C853E040027F98F /* Ifc4x3_rc1-schema.cpp */,
+				961748282C853E040027F98F /* Ifc4x3_rc1.cpp */,
+				961748292C853E040027F98F /* Ifc4x3_rc1.h */,
+				9617482A2C853E040027F98F /* Ifc4x3_rc2-definitions.h */,
+				9617482B2C853E040027F98F /* Ifc4x3_rc2-schema.cpp */,
+				9617482C2C853E040027F98F /* Ifc4x3_rc2.cpp */,
+				9617482D2C853E040027F98F /* Ifc4x3_rc2.h */,
+				9617482E2C853E040027F98F /* Ifc4x3_rc3-definitions.h */,
+				9617482F2C853E040027F98F /* Ifc4x3_rc3-schema.cpp */,
+				961748302C853E040027F98F /* Ifc4x3_rc3.cpp */,
+				961748312C853E040027F98F /* Ifc4x3_rc3.h */,
+				961748322C853E040027F98F /* Ifc4x3_rc4-definitions.h */,
+				961748332C853E040027F98F /* Ifc4x3_rc4-schema.cpp */,
+				961748342C853E040027F98F /* Ifc4x3_rc4.cpp */,
+				961748352C853E040027F98F /* Ifc4x3_rc4.h */,
+				961748362C853E040027F98F /* Ifc4x3_tc1-definitions.h */,
+				961748372C853E040027F98F /* Ifc4x3_tc1-schema.cpp */,
+				961748382C853E040027F98F /* Ifc4x3_tc1.cpp */,
+				961748392C853E040027F98F /* Ifc4x3_tc1.h */,
+				9617483A2C853E040027F98F /* Ifc4x3-definitions.h */,
+				9617483B2C853E040027F98F /* Ifc4x3-schema.cpp */,
+				9617483C2C853E040027F98F /* Ifc4x3.cpp */,
+				9617483D2C853E040027F98F /* Ifc4x3.h */,
+				9617483E2C853E040027F98F /* IfcAlignmentHelper.cpp */,
+				9617483F2C853E040027F98F /* IfcAlignmentHelper.h */,
+				961748402C853E040027F98F /* IfcBaseClass.h */,
+				961748412C853E040027F98F /* IfcCharacterDecoder.cpp */,
+				961748422C853E040027F98F /* IfcCharacterDecoder.h */,
+				961748432C853E040027F98F /* IfcEntityInstanceData.cpp */,
+				961748442C853E040027F98F /* IfcEntityInstanceData.h */,
+				961748452C853E040027F98F /* IfcException.h */,
+				961748462C853E040027F98F /* IfcFile.cpp */,
+				961748472C853E040027F98F /* IfcFile.h */,
+				961748482C853E040027F98F /* IfcGlobalId.cpp */,
+				961748492C853E040027F98F /* IfcGlobalId.h */,
+				9617484A2C853E040027F98F /* IfcHierarchyHelper.cpp */,
+				9617484B2C853E040027F98F /* IfcHierarchyHelper.h */,
+				9617484C2C853E040027F98F /* IfcLogger.cpp */,
+				9617484D2C853E040027F98F /* IfcLogger.h */,
+				9617484E2C853E040027F98F /* IfcParse.cpp */,
+				9617484F2C853E040027F98F /* IfcParse.h */,
+				961748502C853E040027F98F /* IfcSchema.cpp */,
+				961748512C853E040027F98F /* IfcSchema.h */,
+				961748522C853E040027F98F /* IfcSIPrefix.cpp */,
+				961748532C853E040027F98F /* IfcSIPrefix.h */,
+				961748542C853E040027F98F /* IfcSpfHeader.cpp */,
+				961748552C853E040027F98F /* IfcSpfHeader.h */,
+				961748562C853E040027F98F /* IfcSpfStream.h */,
+				961748572C853E040027F98F /* IfcUtil.cpp */,
+				961748582C853E040027F98F /* IfcWrite.cpp */,
+				961748592C853E040027F98F /* IfcWrite.h */,
+				9617485A2C853E040027F98F /* macros.h */,
+				9617485B2C853E040027F98F /* parse_ifcxml.cpp */,
+				9617485C2C853E040027F98F /* utils.h */,
+				9617485D2C853E040027F98F /* variantarray.h */,
+			);
+			path = ifcparse;
+			sourceTree = "<group>";
+		};
+		96178C6B2C88A2340027F98F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9605759E2C8FC30C009AA030 /* libTKBin.a */,
+				960575D62C8FC380009AA030 /* libTKBinL.a */,
+				960575CA2C8FC368009AA030 /* libTKBinTObj.a */,
+				960575C32C8FC359009AA030 /* libTKBinXCAF.a */,
+				960575C82C8FC363009AA030 /* libTKBO.a */,
+				960575AF2C8FC32F009AA030 /* libTKBool.a */,
+				960575DC2C8FC38D009AA030 /* libTKBRep.a */,
+				960575DA2C8FC388009AA030 /* libTKCAF.a */,
+				960575BC2C8FC34B009AA030 /* libTKCDF.a */,
+				960575B32C8FC337009AA030 /* libTKDCAF.a */,
+				960575CD2C8FC36E009AA030 /* libTKDE.a */,
+				960575A52C8FC31A009AA030 /* libTKDECascade.a */,
+				960575AA2C8FC325009AA030 /* libTKDEGLTF.a */,
+				960575AE2C8FC32D009AA030 /* libTKDEIGES.a */,
+				960575C92C8FC366009AA030 /* libTKDEOBJ.a */,
+				960575DD2C8FC38F009AA030 /* libTKDEPLY.a */,
+				960575B72C8FC340009AA030 /* libTKDESTEP.a */,
+				960575D32C8FC37A009AA030 /* libTKDESTL.a */,
+				960575BE2C8FC34F009AA030 /* libTKDEVRML.a */,
+				960575CC2C8FC36C009AA030 /* libTKDraw.a */,
+				960575AD2C8FC32B009AA030 /* libTKernel.a */,
+				960575B12C8FC333009AA030 /* libTKExpress.a */,
+				960575C72C8FC361009AA030 /* libTKFeat.a */,
+				960575D12C8FC376009AA030 /* libTKFillet.a */,
+				960575BF2C8FC351009AA030 /* libTKG2d.a */,
+				960575A62C8FC31D009AA030 /* libTKG3d.a */,
+				960575B82C8FC342009AA030 /* libTKGeomAlgo.a */,
+				960575B42C8FC339009AA030 /* libTKGeomBase.a */,
+				960575BA2C8FC346009AA030 /* libTKHLR.a */,
+				960575BD2C8FC34D009AA030 /* libTKLCAF.a */,
+				960575B62C8FC33E009AA030 /* libTKMath.a */,
+				960575B02C8FC331009AA030 /* libTKMesh.a */,
+				960575CF2C8FC372009AA030 /* libTKMeshVS.a */,
+				960575A72C8FC31F009AA030 /* libTKOffset.a */,
+				960575D52C8FC37E009AA030 /* libTKOpenGl.a */,
+				960575DE2C8FC391009AA030 /* libTKOpenGlTest.a */,
+				960575BB2C8FC349009AA030 /* libTKPrim.a */,
+				960575D82C8FC384009AA030 /* libTKQADraw.a */,
+				960575DB2C8FC38A009AA030 /* libTKRWMesh.a */,
+				960575D22C8FC378009AA030 /* libTKService.a */,
+				960575D42C8FC37C009AA030 /* libTKShHealing.a */,
+				960575D72C8FC382009AA030 /* libTKStd.a */,
+				9605759D2C8FC30A009AA030 /* libTKStdL.a */,
+				960575B22C8FC335009AA030 /* libTKTObj.a */,
+				960575C12C8FC355009AA030 /* libTKTObjDRAW.a */,
+				960575A42C8FC318009AA030 /* libTKTopAlgo.a */,
+				960575C62C8FC35F009AA030 /* libTKTopTest.a */,
+				960575C52C8FC35D009AA030 /* libTKV3d.a */,
+				960575B52C8FC33B009AA030 /* libTKVCAF.a */,
+				960575D92C8FC386009AA030 /* libTKViewerTest.a */,
+				960575AB2C8FC327009AA030 /* libTKXCAF.a */,
+				960575B92C8FC344009AA030 /* libTKXDEDRAW.a */,
+				960575CE2C8FC370009AA030 /* libTKXMesh.a */,
+				960575C22C8FC357009AA030 /* libTKXml.a */,
+				960575D02C8FC374009AA030 /* libTKXmlL.a */,
+				9605759C2C8FC308009AA030 /* libTKXmlTObj.a */,
+				960575A12C8FC312009AA030 /* libTKXmlXCAF.a */,
+				960575AC2C8FC329009AA030 /* libTKXSBase.a */,
+				960575C02C8FC353009AA030 /* libTKXSDRAW.a */,
+				9605759F2C8FC30E009AA030 /* libTKXSDRAWDE.a */,
+				960575A02C8FC310009AA030 /* libTKXSDRAWGLTF.a */,
+				960575A22C8FC314009AA030 /* libTKXSDRAWIGES.a */,
+				960575A82C8FC321009AA030 /* libTKXSDRAWOBJ.a */,
+				960575A92C8FC323009AA030 /* libTKXSDRAWPLY.a */,
+				960575C42C8FC35B009AA030 /* libTKXSDRAWSTEP.a */,
+				960575A32C8FC316009AA030 /* libTKXSDRAWSTL.a */,
+				960575CB2C8FC36A009AA030 /* libTKXSDRAWVRML.a */,
+				961081252C8C4A6F00B617E9 /* libmpfr.a */,
+				961081222C8C498B00B617E9 /* libgmp.a */,
+				961081212C8C498900B617E9 /* libgmpxx.a */,
+				96178C822C88A2540027F98F /* libgeometry_kernel_cgal_simple.a */,
+				96178C7F2C88A2530027F98F /* libgeometry_kernel_cgal.a */,
+				96178C792C88A2500027F98F /* libgeometry_kernel_opencascade.a */,
+				96178C7E2C88A2520027F98F /* libgeometry_mapping_ifc2x3.a */,
+				96178C802C88A2530027F98F /* libgeometry_mapping_ifc4.a */,
+				96178C7B2C88A2510027F98F /* libgeometry_mapping_ifc4x1.a */,
+				96178C812C88A2540027F98F /* libgeometry_mapping_ifc4x2.a */,
+				96178C872C88A2570027F98F /* libgeometry_mapping_ifc4x3_add1.a */,
+				96178C842C88A2550027F98F /* libgeometry_mapping_ifc4x3_add2.a */,
+				96178C7A2C88A2500027F98F /* libgeometry_mapping_ifc4x3_tc1.a */,
+				96178C862C88A2560027F98F /* libgeometry_mapping_ifc4x3.a */,
+				96178C782C88A24F0027F98F /* libgeometry_serializer_ifc2x3.a */,
+				96178C742C88A24D0027F98F /* libgeometry_serializer_ifc4.a */,
+				96178C832C88A2550027F98F /* libgeometry_serializer_ifc4x1.a */,
+				96178C6E2C88A24B0027F98F /* libgeometry_serializer_ifc4x2.a */,
+				96178C6F2C88A24B0027F98F /* libgeometry_serializer_ifc4x3_add1.a */,
+				96178C762C88A24E0027F98F /* libgeometry_serializer_ifc4x3_add2.a */,
+				96178C722C88A24C0027F98F /* libgeometry_serializer_ifc4x3_tc1.a */,
+				96178C712C88A24C0027F98F /* libgeometry_serializer_ifc4x3.a */,
+				96178C732C88A24D0027F98F /* libgeometry_serializer.a */,
+				96178C702C88A24B0027F98F /* libSerializers_ifc2x3.a */,
+				96178C772C88A24F0027F98F /* libSerializers_ifc4.a */,
+				96178C6C2C88A24A0027F98F /* libSerializers_ifc4x1.a */,
+				96178C7D2C88A2520027F98F /* libSerializers_ifc4x2.a */,
+				96178C852C88A2560027F98F /* libSerializers_ifc4x3_add1.a */,
+				96178C882C88A2570027F98F /* libSerializers_ifc4x3_add2.a */,
+				96178C752C88A24E0027F98F /* libSerializers_ifc4x3_tc1.a */,
+				96178C6D2C88A24A0027F98F /* libSerializers_ifc4x3.a */,
+				96178C7C2C88A2510027F98F /* libSerializers.a */,
+				9617475C2C853DD90027F98F /* libIfcGeom.a */,
+				9617475D2C853DDB0027F98F /* libIfcParse.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		96178CA92C88A2800027F98F /* ifcjni */ = {
+			isa = PBXGroup;
+			children = (
+				96178CA62C88A2800027F98F /* CITATION.cff */,
+				96178CA72C88A2800027F98F /* IfcJni.cpp */,
+				96178CA82C88A2800027F98F /* org_ifcopenshell_IfcOpenShellModel.h */,
+			);
+			path = ifcjni;
+			sourceTree = "<group>";
+		};
+		96178CAC2C88A2810027F98F /* ifcgeomserver */ = {
+			isa = PBXGroup;
+			children = (
+				96178CAA2C88A2810027F98F /* IfcGeomServer.cpp */,
+				96178CAB2C88A2810027F98F /* README.md */,
+			);
+			path = ifcgeomserver;
+			sourceTree = "<group>";
+		};
+		96178CAF2C88A2810027F98F /* schema_dependent */ = {
+			isa = PBXGroup;
+			children = (
+				96178CAD2C88A2810027F98F /* XmlSerializer.cpp */,
+				96178CAE2C88A2810027F98F /* XmlSerializer.h */,
+			);
+			path = schema_dependent;
+			sourceTree = "<group>";
+		};
+		96178CC62C88A2810027F98F /* serializers */ = {
+			isa = PBXGroup;
+			children = (
+				96178CAF2C88A2810027F98F /* schema_dependent */,
+				96178CB02C88A2810027F98F /* CITATION.cff */,
+				96178CB12C88A2810027F98F /* ColladaSerializer.cpp */,
+				96178CB22C88A2810027F98F /* ColladaSerializer.h */,
+				96178CB32C88A2810027F98F /* GltfSerializer.cpp */,
+				96178CB42C88A2810027F98F /* GltfSerializer.h */,
+				96178CB52C88A2810027F98F /* HdfSerializer.cpp */,
+				96178CB62C88A2810027F98F /* HdfSerializer.h */,
+				96178CB72C88A2810027F98F /* IgesSerializer.h */,
+				96178CB82C88A2810027F98F /* OpenCascadeBasedSerializer.cpp */,
+				96178CB92C88A2810027F98F /* OpenCascadeBasedSerializer.h */,
+				96178CBA2C88A2810027F98F /* serializers_api.h */,
+				96178CBB2C88A2810027F98F /* StepSerializer.h */,
+				96178CBC2C88A2810027F98F /* SvgSerializer.cpp */,
+				96178CBD2C88A2810027F98F /* SvgSerializer.h */,
+				96178CBE2C88A2810027F98F /* USDSerializer.cpp */,
+				96178CBF2C88A2810027F98F /* USDSerializer.h */,
+				96178CC02C88A2810027F98F /* util.cpp */,
+				96178CC12C88A2810027F98F /* util.h */,
+				96178CC22C88A2810027F98F /* WavefrontObjSerializer.cpp */,
+				96178CC32C88A2810027F98F /* WavefrontObjSerializer.h */,
+				96178CC42C88A2810027F98F /* XmlSerializer.cpp */,
+				96178CC52C88A2810027F98F /* XmlSerializer.h */,
+			);
+			path = serializers;
+			sourceTree = "<group>";
+		};
+		96178CCA2C88A2810027F98F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				96178CC72C88A2810027F98F /* type_conversion.i */,
+				96178CC82C88A2810027F98F /* typemaps_in.i */,
+				96178CC92C88A2810027F98F /* typemaps_out.i */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		96178CD02C88A2810027F98F /* ifcwrap */ = {
+			isa = PBXGroup;
+			children = (
+				96178CCA2C88A2810027F98F /* utils */,
+				96178CCB2C88A2810027F98F /* CITATION.cff */,
+				96178CCC2C88A2810027F98F /* CMakeLists.txt */,
+				96178CCD2C88A2810027F98F /* IfcGeomWrapper.i */,
+				96178CCE2C88A2810027F98F /* IfcParseWrapper.i */,
+				96178CCF2C88A2810027F98F /* IfcPython.i */,
+			);
+			path = ifcwrap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D0DF0842BD6533E00C680EF /* IFC SimpleView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D0DF0942BD6534000C680EF /* Build configuration list for PBXNativeTarget "IFC SimpleView" */;
+			buildPhases = (
+				0D0DF0812BD6533E00C680EF /* Sources */,
+				0D0DF0822BD6533E00C680EF /* Frameworks */,
+				0D0DF0832BD6533E00C680EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IFC SimpleView";
+			productName = "IFC-Viewer";
+			productReference = 0D0DF0852BD6533E00C680EF /* IFC SimpleView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D0DF07D2BD6533E00C680EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					0D0DF0842BD6533E00C680EF = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1540;
+					};
+				};
+			};
+			buildConfigurationList = 0D0DF0802BD6533E00C680EF /* Build configuration list for PBXProject "IFC SimpleView" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D0DF07C2BD6533E00C680EF;
+			packageReferences = (
+			);
+			productRefGroup = 0D0DF0862BD6533E00C680EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D0DF0842BD6533E00C680EF /* IFC SimpleView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D0DF0832BD6533E00C680EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D0DF0902BD6534000C680EF /* Preview Assets.xcassets in Resources */,
+				0D0DF08D2BD6534000C680EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D0DF0812BD6533E00C680EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D0DF08B2BD6533E00C680EF /* MainView.swift in Sources */,
+				96220F172C9747260021A371 /* GeometryConverter.mm in Sources */,
+				0D0DF0892BD6533E00C680EF /* IFCSimpleView.swift in Sources */,
+				0D86EBEA2BE29080007522E4 /* SceneViewWrapper.swift in Sources */,
+				0D0DF09A2BD65AD800C680EF /* MainViewViewModel.swift in Sources */,
+				0D86EBE82BE021B8007522E4 /* SceneView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D0DF0922BD6534000C680EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D0DF0932BD6534000C680EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		0D0DF0952BD6534000C680EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "IFC Simple View/IFCSimpleView.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"IFC Simple View/Preview Content\"";
+				DEVELOPMENT_TEAM = 5KH4A9A5FK;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ifcgeom/**",
+					"$(PROJECT_DIR)/serializers",
+					"$(PROJECT_DIR)/ifcwrap",
+					"$(PROJECT_DIR)/ifcjni",
+					"$(PROJECT_DIR)/ifcgeomserver",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ifcgeom/kernels/opencascade",
+				);
+				INFOPLIST_KEY_CFBundleDisplayName = "IFC SimpleView";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					/opt/homebrew/Cellar/boost/1.85.0/lib,
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = digital.netmex.ifcsimpleview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3,
+					"$(PROJECT_DIR)/ifcgeom/kernels/opencascade",
+					/opt/homebrew/Cellar/gmp/6.3.0/include,
+					/opt/homebrew/Cellar/mpfr/4.2.1/include,
+					/opt/homebrew/Cellar/boost/1.85.0/include,
+				);
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+			};
+			name = Debug;
+		};
+		0D0DF0962BD6534000C680EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "IFC Simple View/IFCSimpleView.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"IFC Simple View/Preview Content\"";
+				DEVELOPMENT_TEAM = 5KH4A9A5FK;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ifcgeom/**",
+					"$(PROJECT_DIR)/serializers",
+					"$(PROJECT_DIR)/ifcwrap",
+					"$(PROJECT_DIR)/ifcjni",
+					"$(PROJECT_DIR)/ifcgeomserver",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ifcgeom/kernels/opencascade",
+				);
+				INFOPLIST_KEY_CFBundleDisplayName = "IFC SimpleView";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View",
+					/opt/homebrew/Cellar/boost/1.85.0/lib,
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = digital.netmex.ifcsimpleview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3,
+					"$(PROJECT_DIR)/ifcgeom/kernels/opencascade",
+					/opt/homebrew/Cellar/gmp/6.3.0/include,
+					/opt/homebrew/Cellar/mpfr/4.2.1/include,
+					/opt/homebrew/Cellar/boost/1.85.0/include,
+				);
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D0DF0802BD6533E00C680EF /* Build configuration list for PBXProject "IFC SimpleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D0DF0922BD6534000C680EF /* Debug */,
+				0D0DF0932BD6534000C680EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D0DF0942BD6534000C680EF /* Build configuration list for PBXNativeTarget "IFC SimpleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D0DF0952BD6534000C680EF /* Debug */,
+				0D0DF0962BD6534000C680EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D0DF07D2BD6533E00C680EF /* Project object */;
+}

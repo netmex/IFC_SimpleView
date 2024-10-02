@@ -1,0 +1,12 @@
+//
+//  module.modulemap
+//  IFC SimpleView
+//
+//  Created by Danil Andreevich on 04.09.24.
+//
+
+module GeometryConverter {
+    header "Model/GeometryConverter.h"
+
+    export *
+}
