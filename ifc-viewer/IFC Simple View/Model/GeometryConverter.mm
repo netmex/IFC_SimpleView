@@ -22,6 +22,8 @@
     }
     
     ifcopenshell::geometry::Settings settings_;
+    
+    // "Use-world-coords" specifies whether to apply the local placements of building elements directly to the coordinates of the representation mesh rather than to represent the local placement in the 4x3 matrix, which will in that case be the identity matrix.
     try {
         settings_.set("use-world-coords", true);
     } catch (const std::exception& e) {
@@ -29,6 +31,7 @@
         return nil;
     }
     
+    // "Weld-vertices" specifies whether vertices are welded, meaning that the coordinates vector will only contain unique xyz-triplets. This results in a manifold mesh which is useful for modelling applications, but might result in unwanted shading artefacts in rendering applications.
     try {
         settings_.set("weld-vertices", false);
     } catch (const std::exception& e) {
@@ -87,7 +90,6 @@
             material.diffuse.contents = [NSColor colorWithCalibratedRed:mat->diffuse.r() green:mat->diffuse.g() blue:mat->diffuse.b() alpha:1.0];
             material.specular.contents = [NSColor colorWithCalibratedRed:mat->specular.r() green:mat->specular.g() blue:mat->specular.b() alpha:1.0];
             
-            // TODO: check if DefaultMaterial is rendered correctly
             if (mat->has_transparency()) {
                 material.transparent.contents = [NSNumber numberWithDouble:1.0 - mat->transparency];
             } else {

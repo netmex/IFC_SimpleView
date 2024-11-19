@@ -81,42 +81,244 @@
 		9605761F2C8FC392009AA030 /* libTKBRep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575DC2C8FC38D009AA030 /* libTKBRep.a */; };
 		960576202C8FC392009AA030 /* libTKDEPLY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575DD2C8FC38F009AA030 /* libTKDEPLY.a */; };
 		960576212C8FC392009AA030 /* libTKOpenGlTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960575DE2C8FC391009AA030 /* libTKOpenGlTest.a */; };
-		961081232C8C498B00B617E9 /* libgmpxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961081212C8C498900B617E9 /* libgmpxx.a */; };
-		961081242C8C498B00B617E9 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961081222C8C498B00B617E9 /* libgmp.a */; };
-		961081262C8C4A6F00B617E9 /* libmpfr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961081252C8C4A6F00B617E9 /* libmpfr.a */; };
-		9617475E2C853DDB0027F98F /* libIfcGeom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9617475C2C853DD90027F98F /* libIfcGeom.a */; };
-		9617475F2C853DDB0027F98F /* libIfcParse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9617475D2C853DDB0027F98F /* libIfcParse.a */; };
-		96178C892C88A2570027F98F /* libSerializers_ifc4x1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C6C2C88A24A0027F98F /* libSerializers_ifc4x1.a */; };
-		96178C8A2C88A2570027F98F /* libSerializers_ifc4x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C6D2C88A24A0027F98F /* libSerializers_ifc4x3.a */; };
-		96178C8B2C88A2570027F98F /* libgeometry_serializer_ifc4x2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C6E2C88A24B0027F98F /* libgeometry_serializer_ifc4x2.a */; };
-		96178C8C2C88A2570027F98F /* libgeometry_serializer_ifc4x3_add1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C6F2C88A24B0027F98F /* libgeometry_serializer_ifc4x3_add1.a */; };
-		96178C8D2C88A2570027F98F /* libSerializers_ifc2x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C702C88A24B0027F98F /* libSerializers_ifc2x3.a */; };
-		96178C8E2C88A2570027F98F /* libgeometry_serializer_ifc4x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C712C88A24C0027F98F /* libgeometry_serializer_ifc4x3.a */; };
-		96178C8F2C88A2570027F98F /* libgeometry_serializer_ifc4x3_tc1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C722C88A24C0027F98F /* libgeometry_serializer_ifc4x3_tc1.a */; };
-		96178C902C88A2570027F98F /* libgeometry_serializer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C732C88A24D0027F98F /* libgeometry_serializer.a */; settings = {ATTRIBUTES = (Required, ); }; };
-		96178C912C88A2570027F98F /* libgeometry_serializer_ifc4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C742C88A24D0027F98F /* libgeometry_serializer_ifc4.a */; };
-		96178C922C88A2570027F98F /* libSerializers_ifc4x3_tc1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C752C88A24E0027F98F /* libSerializers_ifc4x3_tc1.a */; };
-		96178C932C88A2570027F98F /* libgeometry_serializer_ifc4x3_add2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C762C88A24E0027F98F /* libgeometry_serializer_ifc4x3_add2.a */; };
-		96178C942C88A2570027F98F /* libSerializers_ifc4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C772C88A24F0027F98F /* libSerializers_ifc4.a */; };
-		96178C952C88A2570027F98F /* libgeometry_serializer_ifc2x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C782C88A24F0027F98F /* libgeometry_serializer_ifc2x3.a */; };
-		96178C962C88A2570027F98F /* libgeometry_kernel_opencascade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C792C88A2500027F98F /* libgeometry_kernel_opencascade.a */; };
-		96178C972C88A2570027F98F /* libgeometry_mapping_ifc4x3_tc1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7A2C88A2500027F98F /* libgeometry_mapping_ifc4x3_tc1.a */; };
-		96178C982C88A2570027F98F /* libgeometry_mapping_ifc4x1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7B2C88A2510027F98F /* libgeometry_mapping_ifc4x1.a */; };
-		96178C992C88A2570027F98F /* libSerializers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7C2C88A2510027F98F /* libSerializers.a */; };
-		96178C9A2C88A2570027F98F /* libSerializers_ifc4x2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7D2C88A2520027F98F /* libSerializers_ifc4x2.a */; };
-		96178C9B2C88A2570027F98F /* libgeometry_mapping_ifc2x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7E2C88A2520027F98F /* libgeometry_mapping_ifc2x3.a */; };
-		96178C9C2C88A2570027F98F /* libgeometry_kernel_cgal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C7F2C88A2530027F98F /* libgeometry_kernel_cgal.a */; };
-		96178C9D2C88A2570027F98F /* libgeometry_mapping_ifc4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C802C88A2530027F98F /* libgeometry_mapping_ifc4.a */; };
-		96178C9E2C88A2570027F98F /* libgeometry_mapping_ifc4x2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C812C88A2540027F98F /* libgeometry_mapping_ifc4x2.a */; };
-		96178C9F2C88A2570027F98F /* libgeometry_kernel_cgal_simple.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C822C88A2540027F98F /* libgeometry_kernel_cgal_simple.a */; };
-		96178CA02C88A2570027F98F /* libgeometry_serializer_ifc4x1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C832C88A2550027F98F /* libgeometry_serializer_ifc4x1.a */; };
-		96178CA12C88A2570027F98F /* libgeometry_mapping_ifc4x3_add2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C842C88A2550027F98F /* libgeometry_mapping_ifc4x3_add2.a */; };
-		96178CA22C88A2570027F98F /* libSerializers_ifc4x3_add1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C852C88A2560027F98F /* libSerializers_ifc4x3_add1.a */; };
-		96178CA32C88A2570027F98F /* libgeometry_mapping_ifc4x3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C862C88A2560027F98F /* libgeometry_mapping_ifc4x3.a */; };
-		96178CA42C88A2570027F98F /* libgeometry_mapping_ifc4x3_add1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C872C88A2570027F98F /* libgeometry_mapping_ifc4x3_add1.a */; };
-		96178CA52C88A2570027F98F /* libSerializers_ifc4x3_add2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96178C882C88A2570027F98F /* libSerializers_ifc4x3_add2.a */; };
 		96220F172C9747260021A371 /* GeometryConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96220F162C9747260021A371 /* GeometryConverter.mm */; };
+		964102E52CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_tc1-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102C12CE6C8DB00ED2F0A /* libgeometry_mapping_ifc4x3_tc1-universal.a */; };
+		964102E62CE6C8DC00ED2F0A /* libgeometry_serializer_ifc2x3-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102C22CE6C8DB00ED2F0A /* libgeometry_serializer_ifc2x3-universal.a */; };
+		964102E72CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x1-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102C32CE6C8DB00ED2F0A /* libgeometry_mapping_ifc4x1-universal.a */; };
+		964102E82CE6C8DC00ED2F0A /* libgeometry_kernel_cgal_simple-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102C42CE6C8DB00ED2F0A /* libgeometry_kernel_cgal_simple-universal.a */; };
+		964102E92CE6C8DC00ED2F0A /* libSerializers_ifc4x3_add1-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102C52CE6C8DC00ED2F0A /* libSerializers_ifc4x3_add1-universal.a */; };
+		964102EA2CE6C8DC00ED2F0A /* libgeometry_kernel_cgal-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102C62CE6C8DC00ED2F0A /* libgeometry_kernel_cgal-universal.a */; };
+		964102EB2CE6C8DC00ED2F0A /* libSerializers-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102C72CE6C8DC00ED2F0A /* libSerializers-universal.a */; };
+		964102EC2CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x2-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102C82CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x2-universal.a */; };
+		964102ED2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102C92CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4-universal.a */; };
+		964102EE2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_add2-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102CA2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_add2-universal.a */; };
+		964102EF2CE6C8DC00ED2F0A /* libSerializers_ifc2x3-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102CB2CE6C8DC00ED2F0A /* libSerializers_ifc2x3-universal.a */; };
+		964102F02CE6C8DC00ED2F0A /* libIfcParse-universal.a.partaa in Resources */ = {isa = PBXBuildFile; fileRef = 964102CC2CE6C8DC00ED2F0A /* libIfcParse-universal.a.partaa */; };
+		964102F12CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102CD2CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4-universal.a */; };
+		964102F22CE6C8DC00ED2F0A /* libSerializers_ifc4x1-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102CE2CE6C8DC00ED2F0A /* libSerializers_ifc4x1-universal.a */; };
+		964102F32CE6C8DC00ED2F0A /* libIfcParse-universal.a.partac in Resources */ = {isa = PBXBuildFile; fileRef = 964102CF2CE6C8DC00ED2F0A /* libIfcParse-universal.a.partac */; };
+		964102F42CE6C8DC00ED2F0A /* libgmp-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102D02CE6C8DC00ED2F0A /* libgmp-universal.a */; };
+		964102F52CE6C8DC00ED2F0A /* libSerializers_ifc4x2-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102D12CE6C8DC00ED2F0A /* libSerializers_ifc4x2-universal.a */; };
+		964102F62CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102D22CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3-universal.a */; };
+		964102F72CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_add1-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102D32CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_add1-universal.a */; };
+		964102F82CE6C8DC00ED2F0A /* libgeometry_kernel_opencascade-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102D42CE6C8DC00ED2F0A /* libgeometry_kernel_opencascade-universal.a */; };
+		964102F92CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_add2-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102D52CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_add2-universal.a */; };
+		964102FA2CE6C8DC00ED2F0A /* libgmpxx-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102D62CE6C8DC00ED2F0A /* libgmpxx-universal.a */; };
+		964102FB2CE6C8DC00ED2F0A /* libgeometry_serializer-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102D72CE6C8DC00ED2F0A /* libgeometry_serializer-universal.a */; };
+		964102FC2CE6C8DC00ED2F0A /* libIfcParse-universal.a.partab in Resources */ = {isa = PBXBuildFile; fileRef = 964102D82CE6C8DC00ED2F0A /* libIfcParse-universal.a.partab */; };
+		964102FD2CE6C8DC00ED2F0A /* libSerializers_ifc4x3_add2-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102D92CE6C8DC00ED2F0A /* libSerializers_ifc4x3_add2-universal.a */; };
+		964102FE2CE6C8DC00ED2F0A /* libSerializers_ifc4-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102DA2CE6C8DC00ED2F0A /* libSerializers_ifc4-universal.a */; };
+		964102FF2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x1-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102DB2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x1-universal.a */; };
+		964103002CE6C8DC00ED2F0A /* libmpfr-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102DC2CE6C8DC00ED2F0A /* libmpfr-universal.a */; };
+		964103012CE6C8DC00ED2F0A /* libIfcGeom-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102DD2CE6C8DC00ED2F0A /* libIfcGeom-universal.a */; };
+		964103022CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102DE2CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3-universal.a */; };
+		964103032CE6C8DC00ED2F0A /* libSerializers_ifc4x3-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102DF2CE6C8DC00ED2F0A /* libSerializers_ifc4x3-universal.a */; };
+		964103042CE6C8DC00ED2F0A /* libSerializers_ifc4x3_tc1-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102E02CE6C8DC00ED2F0A /* libSerializers_ifc4x3_tc1-universal.a */; };
+		964103052CE6C8DC00ED2F0A /* libgeometry_mapping_ifc2x3-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102E12CE6C8DC00ED2F0A /* libgeometry_mapping_ifc2x3-universal.a */; };
+		964103062CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_add1-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102E22CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_add1-universal.a */; };
+		964103072CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_tc1-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102E32CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_tc1-universal.a */; };
+		964103082CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x2-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964102E42CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x2-universal.a */; };
+		9641030A2CE6C95F00ED2F0A /* libIfcParse-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964103092CE6C95F00ED2F0A /* libIfcParse-universal.a */; };
+		968F071B2CEC256F00301DB4 /* org_ifcopenshell_IfcOpenShellModel.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CA82C88A2800027F98F /* org_ifcopenshell_IfcOpenShellModel.h */; };
+		968F071C2CEC256F00301DB4 /* ColladaSerializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CB22C88A2810027F98F /* ColladaSerializer.h */; };
+		968F071D2CEC256F00301DB4 /* GltfSerializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CB42C88A2810027F98F /* GltfSerializer.h */; };
+		968F071E2CEC256F00301DB4 /* HdfSerializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CB62C88A2810027F98F /* HdfSerializer.h */; };
+		968F071F2CEC256F00301DB4 /* IgesSerializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CB72C88A2810027F98F /* IgesSerializer.h */; };
+		968F07202CEC256F00301DB4 /* serializers_api.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CBA2C88A2810027F98F /* serializers_api.h */; };
+		968F07212CEC256F00301DB4 /* StepSerializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CBB2C88A2810027F98F /* StepSerializer.h */; };
+		968F07222CEC256F00301DB4 /* SvgSerializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CBD2C88A2810027F98F /* SvgSerializer.h */; };
+		968F07232CEC256F00301DB4 /* USDSerializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CBF2C88A2810027F98F /* USDSerializer.h */; };
+		968F07242CEC256F00301DB4 /* util.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CC12C88A2810027F98F /* util.h */; };
+		968F07252CEC256F00301DB4 /* WavefrontObjSerializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CC32C88A2810027F98F /* WavefrontObjSerializer.h */; };
+		968F07262CEC256F00301DB4 /* XmlSerializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96178CC52C88A2810027F98F /* XmlSerializer.h */; };
+		968F07272CEC256F00301DB4 /* CgalConversionResult.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747612C853E030027F98F /* CgalConversionResult.h */; };
+		968F07282CEC256F00301DB4 /* CgalKernel.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747632C853E030027F98F /* CgalKernel.h */; };
+		968F07292CEC256F00301DB4 /* nef_to_halfspace_tree.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747642C853E030027F98F /* nef_to_halfspace_tree.h */; };
+		968F072A2CEC256F00301DB4 /* base_utils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747672C853E030027F98F /* base_utils.h */; };
+		968F072B2CEC256F00301DB4 /* boolean_utils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617476A2C853E030027F98F /* boolean_utils.h */; };
+		968F072C2CEC256F00301DB4 /* clash_utils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617476E2C853E030027F98F /* clash_utils.h */; };
+		968F072D2CEC256F00301DB4 /* face_definition.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747712C853E030027F98F /* face_definition.h */; };
+		968F072E2CEC256F00301DB4 /* IfcGeomTree.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747742C853E030027F98F /* IfcGeomTree.h */; };
+		968F072F2CEC256F00301DB4 /* layerset.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747762C853E030027F98F /* layerset.h */; };
+		968F07302CEC256F00301DB4 /* OpenCascadeConversionResult.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617477B2C853E030027F98F /* OpenCascadeConversionResult.h */; };
+		968F07312CEC256F00301DB4 /* OpenCascadeKernel.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617477D2C853E030027F98F /* OpenCascadeKernel.h */; };
+		968F07322CEC256F00301DB4 /* sweep_utils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747822C853E030027F98F /* sweep_utils.h */; };
+		968F07332CEC256F00301DB4 /* wire_builder.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747842C853E030027F98F /* wire_builder.h */; };
+		968F07342CEC256F00301DB4 /* wire_utils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747862C853E030027F98F /* wire_utils.h */; };
+		968F07352CEC256F00301DB4 /* mapping.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747E12C853E030027F98F /* mapping.h */; };
+		968F07362CEC256F00301DB4 /* Serialization.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747E72C853E030027F98F /* Serialization.h */; };
+		968F07372CEC256F00301DB4 /* abstract_mapping.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747EA2C853E030027F98F /* abstract_mapping.h */; };
+		968F07382CEC256F00301DB4 /* AbstractKernel.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747EC2C853E030027F98F /* AbstractKernel.h */; };
+		968F07392CEC256F00301DB4 /* ConversionResult.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747EF2C853E030027F98F /* ConversionResult.h */; };
+		968F073A2CEC256F00301DB4 /* ConversionSettings.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747F12C853E030027F98F /* ConversionSettings.h */; };
+		968F073B2CEC256F00301DB4 /* Converter.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747F32C853E030027F98F /* Converter.h */; };
+		968F073C2CEC256F00301DB4 /* empty.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747F42C853E030027F98F /* empty.h */; };
+		968F073D2CEC256F00301DB4 /* GeometrySerializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747F52C853E030027F98F /* GeometrySerializer.h */; };
+		968F073E2CEC256F00301DB4 /* ifc_geom_api.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747F62C853E030027F98F /* ifc_geom_api.h */; };
+		968F073F2CEC256F00301DB4 /* IfcGeomElement.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747F72C853E030027F98F /* IfcGeomElement.h */; };
+		968F07402CEC256F00301DB4 /* IfcGeomFilter.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747F82C853E030027F98F /* IfcGeomFilter.h */; };
+		968F07412CEC256F00301DB4 /* IfcGeomRenderStyles.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747FA2C853E030027F98F /* IfcGeomRenderStyles.h */; };
+		968F07422CEC256F00301DB4 /* IfcGeomRepresentation.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747FC2C853E030027F98F /* IfcGeomRepresentation.h */; };
+		968F07432CEC256F00301DB4 /* Iterator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747FD2C853E030027F98F /* Iterator.h */; };
+		968F07442CEC256F00301DB4 /* IteratorSettings.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961747FE2C853E030027F98F /* IteratorSettings.h */; };
+		968F07452CEC256F00301DB4 /* piecewise_function_impl.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748012C853E030027F98F /* piecewise_function_impl.h */; };
+		968F07462CEC256F00301DB4 /* profile_helper.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748032C853E030027F98F /* profile_helper.h */; };
+		968F07472CEC256F00301DB4 /* Serializer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748042C853E030027F98F /* Serializer.h */; };
+		968F07482CEC256F00301DB4 /* taxonomy.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748072C853E030027F98F /* taxonomy.h */; };
+		968F07492CEC256F00301DB4 /* aggregate_of_instance.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748092C853E040027F98F /* aggregate_of_instance.h */; };
+		968F074A2CEC256F00301DB4 /* Argument.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617480A2C853E040027F98F /* Argument.h */; };
+		968F074B2CEC256F00301DB4 /* ArgumentType.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617480B2C853E040027F98F /* ArgumentType.h */; };
+		968F074C2CEC256F00301DB4 /* ifc_parse_api.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617480D2C853E040027F98F /* ifc_parse_api.h */; };
+		968F074D2CEC256F00301DB4 /* Ifc2x3-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617480E2C853E040027F98F /* Ifc2x3-definitions.h */; };
+		968F074E2CEC256F00301DB4 /* Ifc2x3.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748112C853E040027F98F /* Ifc2x3.h */; };
+		968F074F2CEC256F00301DB4 /* Ifc4-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748122C853E040027F98F /* Ifc4-definitions.h */; };
+		968F07502CEC256F00301DB4 /* Ifc4.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748152C853E040027F98F /* Ifc4.h */; };
+		968F07512CEC256F00301DB4 /* Ifc4x1-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748162C853E040027F98F /* Ifc4x1-definitions.h */; };
+		968F07522CEC256F00301DB4 /* Ifc4x1.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748192C853E040027F98F /* Ifc4x1.h */; };
+		968F07532CEC256F00301DB4 /* Ifc4x2-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617481A2C853E040027F98F /* Ifc4x2-definitions.h */; };
+		968F07542CEC256F00301DB4 /* Ifc4x2.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617481D2C853E040027F98F /* Ifc4x2.h */; };
+		968F07552CEC256F00301DB4 /* Ifc4x3_add1-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617481E2C853E040027F98F /* Ifc4x3_add1-definitions.h */; };
+		968F07562CEC256F00301DB4 /* Ifc4x3_add1.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748212C853E040027F98F /* Ifc4x3_add1.h */; };
+		968F07572CEC256F00301DB4 /* Ifc4x3_add2-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748222C853E040027F98F /* Ifc4x3_add2-definitions.h */; };
+		968F07582CEC256F00301DB4 /* Ifc4x3_add2.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748252C853E040027F98F /* Ifc4x3_add2.h */; };
+		968F07592CEC256F00301DB4 /* Ifc4x3_rc1-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748262C853E040027F98F /* Ifc4x3_rc1-definitions.h */; };
+		968F075A2CEC256F00301DB4 /* Ifc4x3_rc1.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748292C853E040027F98F /* Ifc4x3_rc1.h */; };
+		968F075B2CEC256F00301DB4 /* Ifc4x3_rc2-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617482A2C853E040027F98F /* Ifc4x3_rc2-definitions.h */; };
+		968F075C2CEC256F00301DB4 /* Ifc4x3_rc2.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617482D2C853E040027F98F /* Ifc4x3_rc2.h */; };
+		968F075D2CEC256F00301DB4 /* Ifc4x3_rc3-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617482E2C853E040027F98F /* Ifc4x3_rc3-definitions.h */; };
+		968F075E2CEC256F00301DB4 /* Ifc4x3_rc3.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748312C853E040027F98F /* Ifc4x3_rc3.h */; };
+		968F075F2CEC256F00301DB4 /* Ifc4x3_rc4-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748322C853E040027F98F /* Ifc4x3_rc4-definitions.h */; };
+		968F07602CEC256F00301DB4 /* Ifc4x3_rc4.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748352C853E040027F98F /* Ifc4x3_rc4.h */; };
+		968F07612CEC256F00301DB4 /* Ifc4x3_tc1-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748362C853E040027F98F /* Ifc4x3_tc1-definitions.h */; };
+		968F07622CEC256F00301DB4 /* Ifc4x3_tc1.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748392C853E040027F98F /* Ifc4x3_tc1.h */; };
+		968F07632CEC256F00301DB4 /* Ifc4x3-definitions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617483A2C853E040027F98F /* Ifc4x3-definitions.h */; };
+		968F07642CEC256F00301DB4 /* Ifc4x3.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617483D2C853E040027F98F /* Ifc4x3.h */; };
+		968F07652CEC256F00301DB4 /* IfcAlignmentHelper.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617483F2C853E040027F98F /* IfcAlignmentHelper.h */; };
+		968F07662CEC256F00301DB4 /* IfcBaseClass.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748402C853E040027F98F /* IfcBaseClass.h */; };
+		968F07672CEC256F00301DB4 /* IfcCharacterDecoder.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748422C853E040027F98F /* IfcCharacterDecoder.h */; };
+		968F07682CEC256F00301DB4 /* IfcEntityInstanceData.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748442C853E040027F98F /* IfcEntityInstanceData.h */; };
+		968F07692CEC256F00301DB4 /* IfcException.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748452C853E040027F98F /* IfcException.h */; };
+		968F076A2CEC256F00301DB4 /* IfcFile.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748472C853E040027F98F /* IfcFile.h */; };
+		968F076B2CEC256F00301DB4 /* IfcGlobalId.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748492C853E040027F98F /* IfcGlobalId.h */; };
+		968F076C2CEC256F00301DB4 /* IfcHierarchyHelper.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617484B2C853E040027F98F /* IfcHierarchyHelper.h */; };
+		968F076D2CEC256F00301DB4 /* IfcLogger.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617484D2C853E040027F98F /* IfcLogger.h */; };
+		968F076E2CEC256F00301DB4 /* IfcParse.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617484F2C853E040027F98F /* IfcParse.h */; };
+		968F076F2CEC256F00301DB4 /* IfcSchema.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748512C853E040027F98F /* IfcSchema.h */; };
+		968F07702CEC256F00301DB4 /* IfcSIPrefix.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748532C853E040027F98F /* IfcSIPrefix.h */; };
+		968F07712CEC256F00301DB4 /* IfcSpfHeader.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748552C853E040027F98F /* IfcSpfHeader.h */; };
+		968F07722CEC256F00301DB4 /* IfcSpfStream.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748562C853E040027F98F /* IfcSpfStream.h */; };
+		968F07732CEC256F00301DB4 /* IfcWrite.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 961748592C853E040027F98F /* IfcWrite.h */; };
+		968F07742CEC256F00301DB4 /* macros.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617485A2C853E040027F98F /* macros.h */; };
+		968F07752CEC256F00301DB4 /* utils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617485C2C853E040027F98F /* utils.h */; };
+		968F07762CEC256F00301DB4 /* variantarray.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 9617485D2C853E040027F98F /* variantarray.h */; };
+		968F07772CEC256F00301DB4 /* GeometryConverter.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 96220F1B2C9759750021A371 /* GeometryConverter.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		968F07192CEC21F000301DB4 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				968F071B2CEC256F00301DB4 /* org_ifcopenshell_IfcOpenShellModel.h in Copy Files */,
+				968F071C2CEC256F00301DB4 /* ColladaSerializer.h in Copy Files */,
+				968F071D2CEC256F00301DB4 /* GltfSerializer.h in Copy Files */,
+				968F071E2CEC256F00301DB4 /* HdfSerializer.h in Copy Files */,
+				968F071F2CEC256F00301DB4 /* IgesSerializer.h in Copy Files */,
+				968F07202CEC256F00301DB4 /* serializers_api.h in Copy Files */,
+				968F07212CEC256F00301DB4 /* StepSerializer.h in Copy Files */,
+				968F07222CEC256F00301DB4 /* SvgSerializer.h in Copy Files */,
+				968F07232CEC256F00301DB4 /* USDSerializer.h in Copy Files */,
+				968F07242CEC256F00301DB4 /* util.h in Copy Files */,
+				968F07252CEC256F00301DB4 /* WavefrontObjSerializer.h in Copy Files */,
+				968F07262CEC256F00301DB4 /* XmlSerializer.h in Copy Files */,
+				968F07272CEC256F00301DB4 /* CgalConversionResult.h in Copy Files */,
+				968F07282CEC256F00301DB4 /* CgalKernel.h in Copy Files */,
+				968F07292CEC256F00301DB4 /* nef_to_halfspace_tree.h in Copy Files */,
+				968F072A2CEC256F00301DB4 /* base_utils.h in Copy Files */,
+				968F072B2CEC256F00301DB4 /* boolean_utils.h in Copy Files */,
+				968F072C2CEC256F00301DB4 /* clash_utils.h in Copy Files */,
+				968F072D2CEC256F00301DB4 /* face_definition.h in Copy Files */,
+				968F072E2CEC256F00301DB4 /* IfcGeomTree.h in Copy Files */,
+				968F072F2CEC256F00301DB4 /* layerset.h in Copy Files */,
+				968F07302CEC256F00301DB4 /* OpenCascadeConversionResult.h in Copy Files */,
+				968F07312CEC256F00301DB4 /* OpenCascadeKernel.h in Copy Files */,
+				968F07322CEC256F00301DB4 /* sweep_utils.h in Copy Files */,
+				968F07332CEC256F00301DB4 /* wire_builder.h in Copy Files */,
+				968F07342CEC256F00301DB4 /* wire_utils.h in Copy Files */,
+				968F07352CEC256F00301DB4 /* mapping.h in Copy Files */,
+				968F07362CEC256F00301DB4 /* Serialization.h in Copy Files */,
+				968F07372CEC256F00301DB4 /* abstract_mapping.h in Copy Files */,
+				968F07382CEC256F00301DB4 /* AbstractKernel.h in Copy Files */,
+				968F07392CEC256F00301DB4 /* ConversionResult.h in Copy Files */,
+				968F073A2CEC256F00301DB4 /* ConversionSettings.h in Copy Files */,
+				968F073B2CEC256F00301DB4 /* Converter.h in Copy Files */,
+				968F073C2CEC256F00301DB4 /* empty.h in Copy Files */,
+				968F073D2CEC256F00301DB4 /* GeometrySerializer.h in Copy Files */,
+				968F073E2CEC256F00301DB4 /* ifc_geom_api.h in Copy Files */,
+				968F073F2CEC256F00301DB4 /* IfcGeomElement.h in Copy Files */,
+				968F07402CEC256F00301DB4 /* IfcGeomFilter.h in Copy Files */,
+				968F07412CEC256F00301DB4 /* IfcGeomRenderStyles.h in Copy Files */,
+				968F07422CEC256F00301DB4 /* IfcGeomRepresentation.h in Copy Files */,
+				968F07432CEC256F00301DB4 /* Iterator.h in Copy Files */,
+				968F07442CEC256F00301DB4 /* IteratorSettings.h in Copy Files */,
+				968F07452CEC256F00301DB4 /* piecewise_function_impl.h in Copy Files */,
+				968F07462CEC256F00301DB4 /* profile_helper.h in Copy Files */,
+				968F07472CEC256F00301DB4 /* Serializer.h in Copy Files */,
+				968F07482CEC256F00301DB4 /* taxonomy.h in Copy Files */,
+				968F07492CEC256F00301DB4 /* aggregate_of_instance.h in Copy Files */,
+				968F074A2CEC256F00301DB4 /* Argument.h in Copy Files */,
+				968F074B2CEC256F00301DB4 /* ArgumentType.h in Copy Files */,
+				968F074C2CEC256F00301DB4 /* ifc_parse_api.h in Copy Files */,
+				968F074D2CEC256F00301DB4 /* Ifc2x3-definitions.h in Copy Files */,
+				968F074E2CEC256F00301DB4 /* Ifc2x3.h in Copy Files */,
+				968F074F2CEC256F00301DB4 /* Ifc4-definitions.h in Copy Files */,
+				968F07502CEC256F00301DB4 /* Ifc4.h in Copy Files */,
+				968F07512CEC256F00301DB4 /* Ifc4x1-definitions.h in Copy Files */,
+				968F07522CEC256F00301DB4 /* Ifc4x1.h in Copy Files */,
+				968F07532CEC256F00301DB4 /* Ifc4x2-definitions.h in Copy Files */,
+				968F07542CEC256F00301DB4 /* Ifc4x2.h in Copy Files */,
+				968F07552CEC256F00301DB4 /* Ifc4x3_add1-definitions.h in Copy Files */,
+				968F07562CEC256F00301DB4 /* Ifc4x3_add1.h in Copy Files */,
+				968F07572CEC256F00301DB4 /* Ifc4x3_add2-definitions.h in Copy Files */,
+				968F07582CEC256F00301DB4 /* Ifc4x3_add2.h in Copy Files */,
+				968F07592CEC256F00301DB4 /* Ifc4x3_rc1-definitions.h in Copy Files */,
+				968F075A2CEC256F00301DB4 /* Ifc4x3_rc1.h in Copy Files */,
+				968F075B2CEC256F00301DB4 /* Ifc4x3_rc2-definitions.h in Copy Files */,
+				968F075C2CEC256F00301DB4 /* Ifc4x3_rc2.h in Copy Files */,
+				968F075D2CEC256F00301DB4 /* Ifc4x3_rc3-definitions.h in Copy Files */,
+				968F075E2CEC256F00301DB4 /* Ifc4x3_rc3.h in Copy Files */,
+				968F075F2CEC256F00301DB4 /* Ifc4x3_rc4-definitions.h in Copy Files */,
+				968F07602CEC256F00301DB4 /* Ifc4x3_rc4.h in Copy Files */,
+				968F07612CEC256F00301DB4 /* Ifc4x3_tc1-definitions.h in Copy Files */,
+				968F07622CEC256F00301DB4 /* Ifc4x3_tc1.h in Copy Files */,
+				968F07632CEC256F00301DB4 /* Ifc4x3-definitions.h in Copy Files */,
+				968F07642CEC256F00301DB4 /* Ifc4x3.h in Copy Files */,
+				968F07652CEC256F00301DB4 /* IfcAlignmentHelper.h in Copy Files */,
+				968F07662CEC256F00301DB4 /* IfcBaseClass.h in Copy Files */,
+				968F07672CEC256F00301DB4 /* IfcCharacterDecoder.h in Copy Files */,
+				968F07682CEC256F00301DB4 /* IfcEntityInstanceData.h in Copy Files */,
+				968F07692CEC256F00301DB4 /* IfcException.h in Copy Files */,
+				968F076A2CEC256F00301DB4 /* IfcFile.h in Copy Files */,
+				968F076B2CEC256F00301DB4 /* IfcGlobalId.h in Copy Files */,
+				968F076C2CEC256F00301DB4 /* IfcHierarchyHelper.h in Copy Files */,
+				968F076D2CEC256F00301DB4 /* IfcLogger.h in Copy Files */,
+				968F076E2CEC256F00301DB4 /* IfcParse.h in Copy Files */,
+				968F076F2CEC256F00301DB4 /* IfcSchema.h in Copy Files */,
+				968F07702CEC256F00301DB4 /* IfcSIPrefix.h in Copy Files */,
+				968F07712CEC256F00301DB4 /* IfcSpfHeader.h in Copy Files */,
+				968F07722CEC256F00301DB4 /* IfcSpfStream.h in Copy Files */,
+				968F07732CEC256F00301DB4 /* IfcWrite.h in Copy Files */,
+				968F07742CEC256F00301DB4 /* macros.h in Copy Files */,
+				968F07752CEC256F00301DB4 /* utils.h in Copy Files */,
+				968F07762CEC256F00301DB4 /* variantarray.h in Copy Files */,
+				968F07772CEC256F00301DB4 /* GeometryConverter.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0D0DF0852BD6533E00C680EF /* IFC SimpleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IFC SimpleView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,11 +397,6 @@
 		960575DC2C8FC38D009AA030 /* libTKBRep.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKBRep.a; sourceTree = "<group>"; };
 		960575DD2C8FC38F009AA030 /* libTKDEPLY.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKDEPLY.a; sourceTree = "<group>"; };
 		960575DE2C8FC391009AA030 /* libTKOpenGlTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTKOpenGlTest.a; sourceTree = "<group>"; };
-		961081212C8C498900B617E9 /* libgmpxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmpxx.a; sourceTree = "<group>"; };
-		961081222C8C498B00B617E9 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
-		961081252C8C4A6F00B617E9 /* libmpfr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmpfr.a; sourceTree = "<group>"; };
-		9617475C2C853DD90027F98F /* libIfcGeom.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIfcGeom.a; sourceTree = "<group>"; };
-		9617475D2C853DDB0027F98F /* libIfcParse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIfcParse.a; sourceTree = "<group>"; };
 		961747602C853E030027F98F /* CgalConversionResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CgalConversionResult.cpp; sourceTree = "<group>"; };
 		961747612C853E030027F98F /* CgalConversionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CgalConversionResult.h; sourceTree = "<group>"; };
 		961747622C853E030027F98F /* CgalKernel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CgalKernel.cpp; sourceTree = "<group>"; };
@@ -447,35 +644,6 @@
 		9617485B2C853E040027F98F /* parse_ifcxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parse_ifcxml.cpp; sourceTree = "<group>"; };
 		9617485C2C853E040027F98F /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 		9617485D2C853E040027F98F /* variantarray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = variantarray.h; sourceTree = "<group>"; };
-		96178C6C2C88A24A0027F98F /* libSerializers_ifc4x1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x1.a; sourceTree = "<group>"; };
-		96178C6D2C88A24A0027F98F /* libSerializers_ifc4x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x3.a; sourceTree = "<group>"; };
-		96178C6E2C88A24B0027F98F /* libgeometry_serializer_ifc4x2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x2.a; sourceTree = "<group>"; };
-		96178C6F2C88A24B0027F98F /* libgeometry_serializer_ifc4x3_add1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x3_add1.a; sourceTree = "<group>"; };
-		96178C702C88A24B0027F98F /* libSerializers_ifc2x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc2x3.a; sourceTree = "<group>"; };
-		96178C712C88A24C0027F98F /* libgeometry_serializer_ifc4x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x3.a; sourceTree = "<group>"; };
-		96178C722C88A24C0027F98F /* libgeometry_serializer_ifc4x3_tc1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x3_tc1.a; sourceTree = "<group>"; };
-		96178C732C88A24D0027F98F /* libgeometry_serializer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer.a; sourceTree = "<group>"; };
-		96178C742C88A24D0027F98F /* libgeometry_serializer_ifc4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4.a; sourceTree = "<group>"; };
-		96178C752C88A24E0027F98F /* libSerializers_ifc4x3_tc1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x3_tc1.a; sourceTree = "<group>"; };
-		96178C762C88A24E0027F98F /* libgeometry_serializer_ifc4x3_add2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x3_add2.a; sourceTree = "<group>"; };
-		96178C772C88A24F0027F98F /* libSerializers_ifc4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4.a; sourceTree = "<group>"; };
-		96178C782C88A24F0027F98F /* libgeometry_serializer_ifc2x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc2x3.a; sourceTree = "<group>"; };
-		96178C792C88A2500027F98F /* libgeometry_kernel_opencascade.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_kernel_opencascade.a; sourceTree = "<group>"; };
-		96178C7A2C88A2500027F98F /* libgeometry_mapping_ifc4x3_tc1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x3_tc1.a; sourceTree = "<group>"; };
-		96178C7B2C88A2510027F98F /* libgeometry_mapping_ifc4x1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x1.a; sourceTree = "<group>"; };
-		96178C7C2C88A2510027F98F /* libSerializers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers.a; sourceTree = "<group>"; };
-		96178C7D2C88A2520027F98F /* libSerializers_ifc4x2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x2.a; sourceTree = "<group>"; };
-		96178C7E2C88A2520027F98F /* libgeometry_mapping_ifc2x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc2x3.a; sourceTree = "<group>"; };
-		96178C7F2C88A2530027F98F /* libgeometry_kernel_cgal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_kernel_cgal.a; sourceTree = "<group>"; };
-		96178C802C88A2530027F98F /* libgeometry_mapping_ifc4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4.a; sourceTree = "<group>"; };
-		96178C812C88A2540027F98F /* libgeometry_mapping_ifc4x2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x2.a; sourceTree = "<group>"; };
-		96178C822C88A2540027F98F /* libgeometry_kernel_cgal_simple.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_kernel_cgal_simple.a; sourceTree = "<group>"; };
-		96178C832C88A2550027F98F /* libgeometry_serializer_ifc4x1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_serializer_ifc4x1.a; sourceTree = "<group>"; };
-		96178C842C88A2550027F98F /* libgeometry_mapping_ifc4x3_add2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x3_add2.a; sourceTree = "<group>"; };
-		96178C852C88A2560027F98F /* libSerializers_ifc4x3_add1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x3_add1.a; sourceTree = "<group>"; };
-		96178C862C88A2560027F98F /* libgeometry_mapping_ifc4x3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x3.a; sourceTree = "<group>"; };
-		96178C872C88A2570027F98F /* libgeometry_mapping_ifc4x3_add1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgeometry_mapping_ifc4x3_add1.a; sourceTree = "<group>"; };
-		96178C882C88A2570027F98F /* libSerializers_ifc4x3_add2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSerializers_ifc4x3_add2.a; sourceTree = "<group>"; };
 		96178CA62C88A2800027F98F /* CITATION.cff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CITATION.cff; sourceTree = "<group>"; };
 		96178CA72C88A2800027F98F /* IfcJni.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IfcJni.cpp; sourceTree = "<group>"; };
 		96178CA82C88A2800027F98F /* org_ifcopenshell_IfcOpenShellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_ifcopenshell_IfcOpenShellModel.h; sourceTree = "<group>"; };
@@ -515,6 +683,43 @@
 		96178CCF2C88A2810027F98F /* IfcPython.i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c.preprocessed; path = IfcPython.i; sourceTree = "<group>"; };
 		96220F162C9747260021A371 /* GeometryConverter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GeometryConverter.mm; sourceTree = "<group>"; };
 		96220F1B2C9759750021A371 /* GeometryConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeometryConverter.h; sourceTree = "<group>"; };
+		964102C12CE6C8DB00ED2F0A /* libgeometry_mapping_ifc4x3_tc1-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_mapping_ifc4x3_tc1-universal.a"; sourceTree = "<group>"; };
+		964102C22CE6C8DB00ED2F0A /* libgeometry_serializer_ifc2x3-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_serializer_ifc2x3-universal.a"; sourceTree = "<group>"; };
+		964102C32CE6C8DB00ED2F0A /* libgeometry_mapping_ifc4x1-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_mapping_ifc4x1-universal.a"; sourceTree = "<group>"; };
+		964102C42CE6C8DB00ED2F0A /* libgeometry_kernel_cgal_simple-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_kernel_cgal_simple-universal.a"; sourceTree = "<group>"; };
+		964102C52CE6C8DC00ED2F0A /* libSerializers_ifc4x3_add1-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSerializers_ifc4x3_add1-universal.a"; sourceTree = "<group>"; };
+		964102C62CE6C8DC00ED2F0A /* libgeometry_kernel_cgal-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_kernel_cgal-universal.a"; sourceTree = "<group>"; };
+		964102C72CE6C8DC00ED2F0A /* libSerializers-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSerializers-universal.a"; sourceTree = "<group>"; };
+		964102C82CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x2-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_mapping_ifc4x2-universal.a"; sourceTree = "<group>"; };
+		964102C92CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_serializer_ifc4-universal.a"; sourceTree = "<group>"; };
+		964102CA2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_add2-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_serializer_ifc4x3_add2-universal.a"; sourceTree = "<group>"; };
+		964102CB2CE6C8DC00ED2F0A /* libSerializers_ifc2x3-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSerializers_ifc2x3-universal.a"; sourceTree = "<group>"; };
+		964102CC2CE6C8DC00ED2F0A /* libIfcParse-universal.a.partaa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libIfcParse-universal.a.partaa"; sourceTree = "<group>"; };
+		964102CD2CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_mapping_ifc4-universal.a"; sourceTree = "<group>"; };
+		964102CE2CE6C8DC00ED2F0A /* libSerializers_ifc4x1-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSerializers_ifc4x1-universal.a"; sourceTree = "<group>"; };
+		964102CF2CE6C8DC00ED2F0A /* libIfcParse-universal.a.partac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libIfcParse-universal.a.partac"; sourceTree = "<group>"; };
+		964102D02CE6C8DC00ED2F0A /* libgmp-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgmp-universal.a"; sourceTree = "<group>"; };
+		964102D12CE6C8DC00ED2F0A /* libSerializers_ifc4x2-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSerializers_ifc4x2-universal.a"; sourceTree = "<group>"; };
+		964102D22CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_serializer_ifc4x3-universal.a"; sourceTree = "<group>"; };
+		964102D32CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_add1-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_mapping_ifc4x3_add1-universal.a"; sourceTree = "<group>"; };
+		964102D42CE6C8DC00ED2F0A /* libgeometry_kernel_opencascade-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_kernel_opencascade-universal.a"; sourceTree = "<group>"; };
+		964102D52CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_add2-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_mapping_ifc4x3_add2-universal.a"; sourceTree = "<group>"; };
+		964102D62CE6C8DC00ED2F0A /* libgmpxx-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgmpxx-universal.a"; sourceTree = "<group>"; };
+		964102D72CE6C8DC00ED2F0A /* libgeometry_serializer-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_serializer-universal.a"; sourceTree = "<group>"; };
+		964102D82CE6C8DC00ED2F0A /* libIfcParse-universal.a.partab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "libIfcParse-universal.a.partab"; sourceTree = "<group>"; };
+		964102D92CE6C8DC00ED2F0A /* libSerializers_ifc4x3_add2-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSerializers_ifc4x3_add2-universal.a"; sourceTree = "<group>"; };
+		964102DA2CE6C8DC00ED2F0A /* libSerializers_ifc4-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSerializers_ifc4-universal.a"; sourceTree = "<group>"; };
+		964102DB2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x1-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_serializer_ifc4x1-universal.a"; sourceTree = "<group>"; };
+		964102DC2CE6C8DC00ED2F0A /* libmpfr-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libmpfr-universal.a"; sourceTree = "<group>"; };
+		964102DD2CE6C8DC00ED2F0A /* libIfcGeom-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libIfcGeom-universal.a"; sourceTree = "<group>"; };
+		964102DE2CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_mapping_ifc4x3-universal.a"; sourceTree = "<group>"; };
+		964102DF2CE6C8DC00ED2F0A /* libSerializers_ifc4x3-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSerializers_ifc4x3-universal.a"; sourceTree = "<group>"; };
+		964102E02CE6C8DC00ED2F0A /* libSerializers_ifc4x3_tc1-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSerializers_ifc4x3_tc1-universal.a"; sourceTree = "<group>"; };
+		964102E12CE6C8DC00ED2F0A /* libgeometry_mapping_ifc2x3-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_mapping_ifc2x3-universal.a"; sourceTree = "<group>"; };
+		964102E22CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_add1-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_serializer_ifc4x3_add1-universal.a"; sourceTree = "<group>"; };
+		964102E32CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_tc1-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_serializer_ifc4x3_tc1-universal.a"; sourceTree = "<group>"; };
+		964102E42CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x2-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgeometry_serializer_ifc4x2-universal.a"; sourceTree = "<group>"; };
+		964103092CE6C95F00ED2F0A /* libIfcParse-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libIfcParse-universal.a"; sourceTree = "<group>"; };
 		96A636782C8901F000B3E188 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -523,107 +728,107 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96178C8F2C88A2570027F98F /* libgeometry_serializer_ifc4x3_tc1.a in Frameworks */,
 				960575FF2C8FC391009AA030 /* libTKCDF.a in Frameworks */,
-				96178C9A2C88A2570027F98F /* libSerializers_ifc4x2.a in Frameworks */,
 				960576032C8FC391009AA030 /* libTKXSDRAW.a in Frameworks */,
+				964102FD2CE6C8DC00ED2F0A /* libSerializers_ifc4x3_add2-universal.a in Frameworks */,
 				9605760F2C8FC391009AA030 /* libTKDraw.a in Frameworks */,
+				964102F62CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3-universal.a in Frameworks */,
 				960576162C8FC391009AA030 /* libTKDESTL.a in Frameworks */,
 				960575FC2C8FC391009AA030 /* libTKXDEDRAW.a in Frameworks */,
+				964102FA2CE6C8DC00ED2F0A /* libgmpxx-universal.a in Frameworks */,
 				960576012C8FC391009AA030 /* libTKDEVRML.a in Frameworks */,
-				96178C922C88A2570027F98F /* libSerializers_ifc4x3_tc1.a in Frameworks */,
 				9605760B2C8FC391009AA030 /* libTKBO.a in Frameworks */,
+				964103072CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_tc1-universal.a in Frameworks */,
+				964102F92CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_add2-universal.a in Frameworks */,
 				960576022C8FC391009AA030 /* libTKG2d.a in Frameworks */,
 				960575E02C8FC391009AA030 /* libTKStdL.a in Frameworks */,
+				964102F52CE6C8DC00ED2F0A /* libSerializers_ifc4x2-universal.a in Frameworks */,
+				964102E62CE6C8DC00ED2F0A /* libgeometry_serializer_ifc2x3-universal.a in Frameworks */,
+				964102FE2CE6C8DC00ED2F0A /* libSerializers_ifc4-universal.a in Frameworks */,
 				960576102C8FC391009AA030 /* libTKDE.a in Frameworks */,
 				960576042C8FC391009AA030 /* libTKTObjDRAW.a in Frameworks */,
-				961081242C8C498B00B617E9 /* libgmp.a in Frameworks */,
 				9605761B2C8FC392009AA030 /* libTKQADraw.a in Frameworks */,
-				96178C8D2C88A2570027F98F /* libSerializers_ifc2x3.a in Frameworks */,
-				96178CA52C88A2570027F98F /* libSerializers_ifc4x3_add2.a in Frameworks */,
+				964102EA2CE6C8DC00ED2F0A /* libgeometry_kernel_cgal-universal.a in Frameworks */,
 				960575E12C8FC391009AA030 /* libTKBin.a in Frameworks */,
-				96178C892C88A2570027F98F /* libSerializers_ifc4x1.a in Frameworks */,
 				960576182C8FC392009AA030 /* libTKOpenGl.a in Frameworks */,
-				961081262C8C4A6F00B617E9 /* libmpfr.a in Frameworks */,
+				964102E82CE6C8DC00ED2F0A /* libgeometry_kernel_cgal_simple-universal.a in Frameworks */,
 				960575F92C8FC391009AA030 /* libTKMath.a in Frameworks */,
-				96178C9D2C88A2570027F98F /* libgeometry_mapping_ifc4.a in Frameworks */,
 				960576062C8FC391009AA030 /* libTKBinXCAF.a in Frameworks */,
-				96178CA32C88A2570027F98F /* libgeometry_mapping_ifc4x3.a in Frameworks */,
 				9605760C2C8FC391009AA030 /* libTKDEOBJ.a in Frameworks */,
+				964102EF2CE6C8DC00ED2F0A /* libSerializers_ifc2x3-universal.a in Frameworks */,
+				964102EC2CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x2-universal.a in Frameworks */,
+				964102F42CE6C8DC00ED2F0A /* libgmp-universal.a in Frameworks */,
 				960576122C8FC391009AA030 /* libTKMeshVS.a in Frameworks */,
-				96178C8E2C88A2570027F98F /* libgeometry_serializer_ifc4x3.a in Frameworks */,
-				96178C9B2C88A2570027F98F /* libgeometry_mapping_ifc2x3.a in Frameworks */,
 				960575EE2C8FC391009AA030 /* libTKXCAF.a in Frameworks */,
 				960575E22C8FC391009AA030 /* libTKXSDRAWDE.a in Frameworks */,
 				9605760A2C8FC391009AA030 /* libTKFeat.a in Frameworks */,
-				96178CA22C88A2570027F98F /* libSerializers_ifc4x3_add1.a in Frameworks */,
 				960575E32C8FC391009AA030 /* libTKXSDRAWGLTF.a in Frameworks */,
 				960575EF2C8FC391009AA030 /* libTKXSBase.a in Frameworks */,
-				9617475F2C853DDB0027F98F /* libIfcParse.a in Frameworks */,
 				960576192C8FC392009AA030 /* libTKBinL.a in Frameworks */,
 				960575E82C8FC391009AA030 /* libTKDECascade.a in Frameworks */,
-				96178C952C88A2570027F98F /* libgeometry_serializer_ifc2x3.a in Frameworks */,
 				9605761C2C8FC392009AA030 /* libTKViewerTest.a in Frameworks */,
 				960576172C8FC391009AA030 /* libTKShHealing.a in Frameworks */,
 				960575ED2C8FC391009AA030 /* libTKDEGLTF.a in Frameworks */,
+				964103052CE6C8DC00ED2F0A /* libgeometry_mapping_ifc2x3-universal.a in Frameworks */,
 				9605760D2C8FC391009AA030 /* libTKBinTObj.a in Frameworks */,
-				96178C992C88A2570027F98F /* libSerializers.a in Frameworks */,
 				960575E92C8FC391009AA030 /* libTKG3d.a in Frameworks */,
-				96178C8C2C88A2570027F98F /* libgeometry_serializer_ifc4x3_add1.a in Frameworks */,
-				96178C9C2C88A2570027F98F /* libgeometry_kernel_cgal.a in Frameworks */,
 				9605761E2C8FC392009AA030 /* libTKRWMesh.a in Frameworks */,
 				960576212C8FC392009AA030 /* libTKOpenGlTest.a in Frameworks */,
+				964103002CE6C8DC00ED2F0A /* libmpfr-universal.a in Frameworks */,
 				960576132C8FC391009AA030 /* libTKXmlL.a in Frameworks */,
 				960576002C8FC391009AA030 /* libTKLCAF.a in Frameworks */,
+				964103022CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3-universal.a in Frameworks */,
 				960576202C8FC392009AA030 /* libTKDEPLY.a in Frameworks */,
 				960575E72C8FC391009AA030 /* libTKTopAlgo.a in Frameworks */,
-				961081232C8C498B00B617E9 /* libgmpxx.a in Frameworks */,
-				96178C8B2C88A2570027F98F /* libgeometry_serializer_ifc4x2.a in Frameworks */,
-				96178C9F2C88A2570027F98F /* libgeometry_kernel_cgal_simple.a in Frameworks */,
-				96178CA12C88A2570027F98F /* libgeometry_mapping_ifc4x3_add2.a in Frameworks */,
 				960575F62C8FC391009AA030 /* libTKDCAF.a in Frameworks */,
+				964102ED2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4-universal.a in Frameworks */,
 				9605761D2C8FC392009AA030 /* libTKCAF.a in Frameworks */,
-				96178C972C88A2570027F98F /* libgeometry_mapping_ifc4x3_tc1.a in Frameworks */,
+				964102F82CE6C8DC00ED2F0A /* libgeometry_kernel_opencascade-universal.a in Frameworks */,
+				964102E92CE6C8DC00ED2F0A /* libSerializers_ifc4x3_add1-universal.a in Frameworks */,
 				960575F52C8FC391009AA030 /* libTKTObj.a in Frameworks */,
 				960575E52C8FC391009AA030 /* libTKXSDRAWIGES.a in Frameworks */,
+				964103032CE6C8DC00ED2F0A /* libSerializers_ifc4x3-universal.a in Frameworks */,
 				960575DF2C8FC391009AA030 /* libTKXmlTObj.a in Frameworks */,
+				964103082CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x2-universal.a in Frameworks */,
 				960576152C8FC391009AA030 /* libTKService.a in Frameworks */,
-				96178C8A2C88A2570027F98F /* libSerializers_ifc4x3.a in Frameworks */,
 				960575EB2C8FC391009AA030 /* libTKXSDRAWOBJ.a in Frameworks */,
+				964102F12CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4-universal.a in Frameworks */,
+				964102EB2CE6C8DC00ED2F0A /* libSerializers-universal.a in Frameworks */,
+				9641030A2CE6C95F00ED2F0A /* libIfcParse-universal.a in Frameworks */,
 				960576092C8FC391009AA030 /* libTKTopTest.a in Frameworks */,
 				960576112C8FC391009AA030 /* libTKXMesh.a in Frameworks */,
 				960576142C8FC391009AA030 /* libTKFillet.a in Frameworks */,
-				96178C9E2C88A2570027F98F /* libgeometry_mapping_ifc4x2.a in Frameworks */,
 				960575FB2C8FC391009AA030 /* libTKGeomAlgo.a in Frameworks */,
 				9605761A2C8FC392009AA030 /* libTKStd.a in Frameworks */,
+				964102EE2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_add2-universal.a in Frameworks */,
+				964102E52CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_tc1-universal.a in Frameworks */,
 				960575F12C8FC391009AA030 /* libTKDEIGES.a in Frameworks */,
 				960575EC2C8FC391009AA030 /* libTKXSDRAWPLY.a in Frameworks */,
 				960575F02C8FC391009AA030 /* libTKernel.a in Frameworks */,
-				96178C982C88A2570027F98F /* libgeometry_mapping_ifc4x1.a in Frameworks */,
+				964103062CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_add1-universal.a in Frameworks */,
 				960575EA2C8FC391009AA030 /* libTKOffset.a in Frameworks */,
 				960575FE2C8FC391009AA030 /* libTKPrim.a in Frameworks */,
-				96178C942C88A2570027F98F /* libSerializers_ifc4.a in Frameworks */,
+				964102FF2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x1-universal.a in Frameworks */,
 				960575F72C8FC391009AA030 /* libTKGeomBase.a in Frameworks */,
-				96178CA02C88A2570027F98F /* libgeometry_serializer_ifc4x1.a in Frameworks */,
 				9605760E2C8FC391009AA030 /* libTKXSDRAWVRML.a in Frameworks */,
 				960575F82C8FC391009AA030 /* libTKVCAF.a in Frameworks */,
 				960576082C8FC391009AA030 /* libTKV3d.a in Frameworks */,
-				96178C912C88A2570027F98F /* libgeometry_serializer_ifc4.a in Frameworks */,
 				9605761F2C8FC392009AA030 /* libTKBRep.a in Frameworks */,
 				960575E62C8FC391009AA030 /* libTKXSDRAWSTL.a in Frameworks */,
-				96178C932C88A2570027F98F /* libgeometry_serializer_ifc4x3_add2.a in Frameworks */,
+				964103012CE6C8DC00ED2F0A /* libIfcGeom-universal.a in Frameworks */,
 				960575F22C8FC391009AA030 /* libTKBool.a in Frameworks */,
-				9617475E2C853DDB0027F98F /* libIfcGeom.a in Frameworks */,
 				960576052C8FC391009AA030 /* libTKXml.a in Frameworks */,
-				96178CA42C88A2570027F98F /* libgeometry_mapping_ifc4x3_add1.a in Frameworks */,
+				964103042CE6C8DC00ED2F0A /* libSerializers_ifc4x3_tc1-universal.a in Frameworks */,
+				964102F22CE6C8DC00ED2F0A /* libSerializers_ifc4x1-universal.a in Frameworks */,
+				964102FB2CE6C8DC00ED2F0A /* libgeometry_serializer-universal.a in Frameworks */,
+				964102E72CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x1-universal.a in Frameworks */,
 				960575F32C8FC391009AA030 /* libTKMesh.a in Frameworks */,
-				96178C962C88A2570027F98F /* libgeometry_kernel_opencascade.a in Frameworks */,
 				960575F42C8FC391009AA030 /* libTKExpress.a in Frameworks */,
 				960575FD2C8FC391009AA030 /* libTKHLR.a in Frameworks */,
 				960575FA2C8FC391009AA030 /* libTKDESTEP.a in Frameworks */,
 				960575E42C8FC391009AA030 /* libTKXmlXCAF.a in Frameworks */,
 				960576072C8FC391009AA030 /* libTKXSDRAWSTEP.a in Frameworks */,
-				96178C902C88A2570027F98F /* libgeometry_serializer.a in Frameworks */,
+				964102F72CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_add1-universal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1015,6 +1220,43 @@
 		96178C6B2C88A2340027F98F /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				964103092CE6C95F00ED2F0A /* libIfcParse-universal.a */,
+				964102C42CE6C8DB00ED2F0A /* libgeometry_kernel_cgal_simple-universal.a */,
+				964102C62CE6C8DC00ED2F0A /* libgeometry_kernel_cgal-universal.a */,
+				964102D42CE6C8DC00ED2F0A /* libgeometry_kernel_opencascade-universal.a */,
+				964102E12CE6C8DC00ED2F0A /* libgeometry_mapping_ifc2x3-universal.a */,
+				964102CD2CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4-universal.a */,
+				964102C32CE6C8DB00ED2F0A /* libgeometry_mapping_ifc4x1-universal.a */,
+				964102C82CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x2-universal.a */,
+				964102D32CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_add1-universal.a */,
+				964102D52CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3_add2-universal.a */,
+				964102C12CE6C8DB00ED2F0A /* libgeometry_mapping_ifc4x3_tc1-universal.a */,
+				964102DE2CE6C8DC00ED2F0A /* libgeometry_mapping_ifc4x3-universal.a */,
+				964102C22CE6C8DB00ED2F0A /* libgeometry_serializer_ifc2x3-universal.a */,
+				964102C92CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4-universal.a */,
+				964102DB2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x1-universal.a */,
+				964102E42CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x2-universal.a */,
+				964102E22CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_add1-universal.a */,
+				964102CA2CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_add2-universal.a */,
+				964102E32CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3_tc1-universal.a */,
+				964102D22CE6C8DC00ED2F0A /* libgeometry_serializer_ifc4x3-universal.a */,
+				964102D72CE6C8DC00ED2F0A /* libgeometry_serializer-universal.a */,
+				964102D02CE6C8DC00ED2F0A /* libgmp-universal.a */,
+				964102D62CE6C8DC00ED2F0A /* libgmpxx-universal.a */,
+				964102DD2CE6C8DC00ED2F0A /* libIfcGeom-universal.a */,
+				964102CC2CE6C8DC00ED2F0A /* libIfcParse-universal.a.partaa */,
+				964102D82CE6C8DC00ED2F0A /* libIfcParse-universal.a.partab */,
+				964102CF2CE6C8DC00ED2F0A /* libIfcParse-universal.a.partac */,
+				964102DC2CE6C8DC00ED2F0A /* libmpfr-universal.a */,
+				964102CB2CE6C8DC00ED2F0A /* libSerializers_ifc2x3-universal.a */,
+				964102DA2CE6C8DC00ED2F0A /* libSerializers_ifc4-universal.a */,
+				964102CE2CE6C8DC00ED2F0A /* libSerializers_ifc4x1-universal.a */,
+				964102D12CE6C8DC00ED2F0A /* libSerializers_ifc4x2-universal.a */,
+				964102C52CE6C8DC00ED2F0A /* libSerializers_ifc4x3_add1-universal.a */,
+				964102D92CE6C8DC00ED2F0A /* libSerializers_ifc4x3_add2-universal.a */,
+				964102E02CE6C8DC00ED2F0A /* libSerializers_ifc4x3_tc1-universal.a */,
+				964102DF2CE6C8DC00ED2F0A /* libSerializers_ifc4x3-universal.a */,
+				964102C72CE6C8DC00ED2F0A /* libSerializers-universal.a */,
 				9605759E2C8FC30C009AA030 /* libTKBin.a */,
 				960575D62C8FC380009AA030 /* libTKBinL.a */,
 				960575CA2C8FC368009AA030 /* libTKBinTObj.a */,
@@ -1082,40 +1324,6 @@
 				960575C42C8FC35B009AA030 /* libTKXSDRAWSTEP.a */,
 				960575A32C8FC316009AA030 /* libTKXSDRAWSTL.a */,
 				960575CB2C8FC36A009AA030 /* libTKXSDRAWVRML.a */,
-				961081252C8C4A6F00B617E9 /* libmpfr.a */,
-				961081222C8C498B00B617E9 /* libgmp.a */,
-				961081212C8C498900B617E9 /* libgmpxx.a */,
-				96178C822C88A2540027F98F /* libgeometry_kernel_cgal_simple.a */,
-				96178C7F2C88A2530027F98F /* libgeometry_kernel_cgal.a */,
-				96178C792C88A2500027F98F /* libgeometry_kernel_opencascade.a */,
-				96178C7E2C88A2520027F98F /* libgeometry_mapping_ifc2x3.a */,
-				96178C802C88A2530027F98F /* libgeometry_mapping_ifc4.a */,
-				96178C7B2C88A2510027F98F /* libgeometry_mapping_ifc4x1.a */,
-				96178C812C88A2540027F98F /* libgeometry_mapping_ifc4x2.a */,
-				96178C872C88A2570027F98F /* libgeometry_mapping_ifc4x3_add1.a */,
-				96178C842C88A2550027F98F /* libgeometry_mapping_ifc4x3_add2.a */,
-				96178C7A2C88A2500027F98F /* libgeometry_mapping_ifc4x3_tc1.a */,
-				96178C862C88A2560027F98F /* libgeometry_mapping_ifc4x3.a */,
-				96178C782C88A24F0027F98F /* libgeometry_serializer_ifc2x3.a */,
-				96178C742C88A24D0027F98F /* libgeometry_serializer_ifc4.a */,
-				96178C832C88A2550027F98F /* libgeometry_serializer_ifc4x1.a */,
-				96178C6E2C88A24B0027F98F /* libgeometry_serializer_ifc4x2.a */,
-				96178C6F2C88A24B0027F98F /* libgeometry_serializer_ifc4x3_add1.a */,
-				96178C762C88A24E0027F98F /* libgeometry_serializer_ifc4x3_add2.a */,
-				96178C722C88A24C0027F98F /* libgeometry_serializer_ifc4x3_tc1.a */,
-				96178C712C88A24C0027F98F /* libgeometry_serializer_ifc4x3.a */,
-				96178C732C88A24D0027F98F /* libgeometry_serializer.a */,
-				96178C702C88A24B0027F98F /* libSerializers_ifc2x3.a */,
-				96178C772C88A24F0027F98F /* libSerializers_ifc4.a */,
-				96178C6C2C88A24A0027F98F /* libSerializers_ifc4x1.a */,
-				96178C7D2C88A2520027F98F /* libSerializers_ifc4x2.a */,
-				96178C852C88A2560027F98F /* libSerializers_ifc4x3_add1.a */,
-				96178C882C88A2570027F98F /* libSerializers_ifc4x3_add2.a */,
-				96178C752C88A24E0027F98F /* libSerializers_ifc4x3_tc1.a */,
-				96178C6D2C88A24A0027F98F /* libSerializers_ifc4x3.a */,
-				96178C7C2C88A2510027F98F /* libSerializers.a */,
-				9617475C2C853DD90027F98F /* libIfcGeom.a */,
-				9617475D2C853DDB0027F98F /* libIfcParse.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -1203,6 +1411,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		968F071A2CEC243100301DB4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		0D0DF0842BD6533E00C680EF /* IFC SimpleView */ = {
 			isa = PBXNativeTarget;
@@ -1211,6 +1429,8 @@
 				0D0DF0812BD6533E00C680EF /* Sources */,
 				0D0DF0822BD6533E00C680EF /* Frameworks */,
 				0D0DF0832BD6533E00C680EF /* Resources */,
+				968F071A2CEC243100301DB4 /* Headers */,
+				968F07192CEC21F000301DB4 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -1262,8 +1482,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964102F32CE6C8DC00ED2F0A /* libIfcParse-universal.a.partac in Resources */,
 				0D0DF0902BD6534000C680EF /* Preview Assets.xcassets in Resources */,
+				964102FC2CE6C8DC00ED2F0A /* libIfcParse-universal.a.partab in Resources */,
 				0D0DF08D2BD6534000C680EF /* Assets.xcassets in Resources */,
+				964102F02CE6C8DC00ED2F0A /* libIfcParse-universal.a.partaa in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1341,12 +1564,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1401,11 +1626,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -1417,11 +1644,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "IFC Simple View/IFCSimpleView.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"IFC Simple View/Preview Content\"";
 				DEVELOPMENT_TEAM = 5KH4A9A5FK;
@@ -1695,11 +1922,46 @@
 					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
 					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
 					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = digital.netmex.ifcsimpleview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
@@ -1726,11 +1988,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "IFC Simple View/IFCSimpleView.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"IFC Simple View/Preview Content\"";
 				DEVELOPMENT_TEAM = 5KH4A9A5FK;
@@ -2004,11 +2265,46 @@
 					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
 					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
 					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
+					"$(PROJECT_DIR)/IFC\\ Simple\\ View/lib",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = digital.netmex.ifcsimpleview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
