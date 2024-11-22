@@ -60,6 +60,10 @@
     do {
         const IfcGeom::TriangulationElement* triElem = static_cast<const IfcGeom::TriangulationElement*>(it->get());
         
+        if (triElem->type() == "IfcOpeningElement" || triElem->type() == "IfcSpace") {
+            continue;
+        }
+        
         const boost::shared_ptr<IfcGeom::Representation::Triangulation>& triElemGeom = triElem->geometry_pointer();
         
         const std::vector<int>& elemFaces = triElemGeom->faces();
@@ -87,19 +91,10 @@
             
             ifcopenshell::geometry::taxonomy::style::ptr mat = elemMats[elemMatIds[i / 3]];
             SCNMaterial *material = [SCNMaterial new];
-            material.diffuse.contents = [NSColor colorWithCalibratedRed:mat->diffuse.r() green:mat->diffuse.g() blue:mat->diffuse.b() alpha:1.0];
-            material.specular.contents = [NSColor colorWithCalibratedRed:mat->specular.r() green:mat->specular.g() blue:mat->specular.b() alpha:1.0];
+        
+            material.diffuse.contents = [NSColor colorWithCalibratedRed:mat->diffuse.r() green:mat->diffuse.g() blue:mat->diffuse.b() alpha:(mat->has_transparency()? 1.0 - mat->transparency : 1.0)];
+            material.specular.contents = [NSColor colorWithCalibratedRed:mat->specular.r() green:mat->specular.g() blue:mat->specular.b() alpha:(mat->has_specularity()? 1.0 - mat->transparency : 1.0)];
             
-            if (mat->has_transparency()) {
-                material.transparent.contents = [NSNumber numberWithDouble:1.0 - mat->transparency];
-            } else {
-                material.transparent.contents = [NSNumber numberWithDouble:0.0];
-            }
-            if (mat->has_specularity()) {
-                material.specular.contents = [NSNumber numberWithDouble:1.0 - mat->specularity];
-            } else {
-                material.specular.contents = [NSNumber numberWithDouble:0.0];
-            }
             [materials addObject:material];
         }
         
@@ -111,7 +106,7 @@
         [scene.rootNode addChildNode:node];
         
         std::string elemInfo = triElem->type();
-        elemInfo += triElem->name() == "" ? "" : ": " + triElem->name() + " geometry added";
+        elemInfo += triElem->name() == "" ? "" : ": " + triElem->name() + " - geometry added";
         std::cout << elemInfo + "\n";
         
     } while (it->next());
