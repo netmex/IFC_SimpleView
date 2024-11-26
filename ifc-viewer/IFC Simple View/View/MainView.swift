@@ -33,7 +33,7 @@ struct MainView: View {
                 }
                 .disabled(viewModel.selectedFileURL == nil)
             }.navigationDestination(isPresented: $viewModel.viewFile, destination: {
-                SceneView(filePath: viewModel.selectedFileURL?.path() ?? "")
+                SceneView(filePath: viewModel.selectedFileURL?.path().removingPercentEncoding ?? "")
             })
         }
         .padding()
