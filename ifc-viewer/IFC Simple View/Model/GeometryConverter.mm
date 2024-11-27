@@ -46,8 +46,10 @@
         return nil;
     }
     
-    IfcGeom::Iterator* it = new IfcGeom::Iterator(*(&settings_), &file);
-    
+    int numThreads = std::thread::hardware_concurrency();
+    IfcGeom::Iterator* it = new IfcGeom::Iterator("opencascade", *(&settings_), &file, numThreads);
+
+
     if (!it->initialize()) {
         std::cout << "Failed to initialize the iterator";
         delete it;
@@ -55,7 +57,6 @@
     
     SCNView *sceneView = [[SCNView alloc] initWithFrame:NSMakeRect(0, 0, 800, 600)];
     SCNScene *scene = [SCNScene new];
-    
     
     do {
         const IfcGeom::TriangulationElement* triElem = static_cast<const IfcGeom::TriangulationElement*>(it->get());
@@ -70,17 +71,6 @@
         const std::vector<double>& elemVertices = triElemGeom->verts();
         const std::vector<ifcopenshell::geometry::taxonomy::style::ptr>& elemMats = triElemGeom->materials();
         const std::vector<int>& elemMatIds = triElemGeom->material_ids();
-
-        
-//        if (triElem->type() == "IfcWindow") {
-//            for (const auto& elemMat : elemMats) {
-//                std::cout << elemMat->name << " ";
-//            }
-//            std::cout << std::endl;
-//            for (const auto& elemMatId : elemMatIds) {
-//                std::cout << elemMatId << " ";
-//            }
-//        }
         
         /* Creating vertex source for building geometry later*/
         std::vector<SCNVector3> vertices;
