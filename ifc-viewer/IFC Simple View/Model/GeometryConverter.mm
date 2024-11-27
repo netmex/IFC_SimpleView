@@ -70,6 +70,17 @@
         const std::vector<double>& elemVertices = triElemGeom->verts();
         const std::vector<ifcopenshell::geometry::taxonomy::style::ptr>& elemMats = triElemGeom->materials();
         const std::vector<int>& elemMatIds = triElemGeom->material_ids();
+
+        
+        if (triElem->type() == "IfcWindow") {
+            for (const auto& elemMat : elemMats) {
+                std::cout << elemMat->name << " ";
+            }
+            std::cout << std::endl;
+//            for (const auto& elemMatId : elemMatIds) {
+//                std::cout << elemMatId << " ";
+//            }
+        }
         
         std::vector<SCNVector3> vertices;
         for (size_t i = 0; i < elemVertices.size(); i += 3) {
@@ -79,22 +90,25 @@
         
         SCNGeometrySource *vertexSource = [SCNGeometrySource geometrySourceWithVertices:vertices.data() count:vertices.size()];
         
+        NSMutableArray<SCNGeometryElement *> *geometryElements = [NSMutableArray arrayWithCapacity:elemFaces.size() / 3 * sizeof(SCNGeometryElement*)];
+        NSMutableArray<SCNMaterial *> *materials = [NSMutableArray arrayWithCapacity:elemFaces.size() / 3 * sizeof(SCNMaterial*)];
         
-        NSMutableArray<SCNGeometryElement *> *geometryElements = [NSMutableArray array];
-        NSMutableArray<SCNMaterial *> *materials = [NSMutableArray array];
+        NSMutableArray<SCNMaterial *> *materialCache = [NSMutableArray arrayWithCapacity:elemMats.size() * sizeof(SCNMaterial*)];
+        for (const auto& mat : elemMats) {
+            SCNMaterial *material = [SCNMaterial new];
+            material.diffuse.contents = [NSColor colorWithCalibratedRed:mat->diffuse.r() green:mat->diffuse.g() blue:mat->diffuse.b() alpha:(mat->has_transparency()? 1.0 - mat->transparency : 1.0)];
+            material.specular.contents = [NSColor colorWithCalibratedRed:mat->specular.r() green:mat->specular.g() blue:mat->specular.b() alpha:(mat->has_specularity()? 1.0 - mat->transparency : 1.0)];
+            [materialCache addObject:material];
+        }
         
         for (size_t i = 0; i < elemFaces.size(); i += 3) {
             int data[3] = { elemFaces[i], elemFaces[i + 1], elemFaces[i + 2] };
             NSData *faceData = [NSData dataWithBytes:data length:3 * sizeof(int)];
             SCNGeometryElement *geometryElement = [SCNGeometryElement geometryElementWithData:faceData primitiveType:SCNGeometryPrimitiveTypeTriangles primitiveCount:1 bytesPerIndex:sizeof(int)];
             [geometryElements addObject:geometryElement];
-            
-            ifcopenshell::geometry::taxonomy::style::ptr mat = elemMats[elemMatIds[i / 3]];
-            SCNMaterial *material = [SCNMaterial new];
+    
+            SCNMaterial *material = materialCache[elemMatIds[i / 3]];
         
-            material.diffuse.contents = [NSColor colorWithCalibratedRed:mat->diffuse.r() green:mat->diffuse.g() blue:mat->diffuse.b() alpha:(mat->has_transparency()? 1.0 - mat->transparency : 1.0)];
-            material.specular.contents = [NSColor colorWithCalibratedRed:mat->specular.r() green:mat->specular.g() blue:mat->specular.b() alpha:(mat->has_specularity()? 1.0 - mat->transparency : 1.0)];
-            
             [materials addObject:material];
         }
         
