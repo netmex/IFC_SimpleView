@@ -72,27 +72,25 @@
         const std::vector<int>& elemMatIds = triElemGeom->material_ids();
 
         
-        if (triElem->type() == "IfcWindow") {
-            for (const auto& elemMat : elemMats) {
-                std::cout << elemMat->name << " ";
-            }
-            std::cout << std::endl;
+//        if (triElem->type() == "IfcWindow") {
+//            for (const auto& elemMat : elemMats) {
+//                std::cout << elemMat->name << " ";
+//            }
+//            std::cout << std::endl;
 //            for (const auto& elemMatId : elemMatIds) {
 //                std::cout << elemMatId << " ";
 //            }
-        }
+//        }
         
+        /* Creating vertex source for building geometry later*/
         std::vector<SCNVector3> vertices;
         for (size_t i = 0; i < elemVertices.size(); i += 3) {
             SCNVector3 vertex = SCNVector3Make(elemVertices[i], elemVertices[i + 1], elemVertices[i + 2]);
             vertices.push_back(vertex);
         }
-        
         SCNGeometrySource *vertexSource = [SCNGeometrySource geometrySourceWithVertices:vertices.data() count:vertices.size()];
         
-        NSMutableArray<SCNGeometryElement *> *geometryElements = [NSMutableArray arrayWithCapacity:elemFaces.size() / 3 * sizeof(SCNGeometryElement*)];
-        NSMutableArray<SCNMaterial *> *materials = [NSMutableArray arrayWithCapacity:elemFaces.size() / 3 * sizeof(SCNMaterial*)];
-        
+        /* Material preprocessing */
         NSMutableArray<SCNMaterial *> *materialCache = [NSMutableArray arrayWithCapacity:elemMats.size() * sizeof(SCNMaterial*)];
         for (const auto& mat : elemMats) {
             SCNMaterial *material = [SCNMaterial new];
@@ -101,17 +99,37 @@
             [materialCache addObject:material];
         }
         
-        for (size_t i = 0; i < elemFaces.size(); i += 3) {
-            int data[3] = { elemFaces[i], elemFaces[i + 1], elemFaces[i + 2] };
-            NSData *faceData = [NSData dataWithBytes:data length:3 * sizeof(int)];
-            SCNGeometryElement *geometryElement = [SCNGeometryElement geometryElementWithData:faceData primitiveType:SCNGeometryPrimitiveTypeTriangles primitiveCount:1 bytesPerIndex:sizeof(int)];
-            [geometryElements addObject:geometryElement];
-    
-            SCNMaterial *material = materialCache[elemMatIds[i / 3]];
+        /* Grouping faces by material IDs */
+        std::map<int, std::vector<int>> elemFacesGroupedByMatId;
+        auto fit = elemFaces.begin();
+        for (const int& matId : elemMatIds) {
+            for (int i = 0; i < 3; i++) {
+                elemFacesGroupedByMatId[matId].push_back(*fit++);
+            }
+        }
+        if (fit != elemFaces.end()) {
+            std::cerr << "Mapping faces to material IDs failed!" << std::endl;
+        }
         
+        /* Creating geometry elements based on faces grouped by materials */
+        /* (one SCNGeometryElement per material) */
+        NSMutableArray<SCNGeometryElement *> *geometryElements = [NSMutableArray arrayWithCapacity:elemMats.size() * sizeof(SCNGeometryElement*)];
+        NSMutableArray<SCNMaterial *> *materials = [NSMutableArray arrayWithCapacity:elemMats.size() * sizeof(SCNMaterial*)];
+        
+        for (const auto& group : elemFacesGroupedByMatId) {
+            int matId = group.first;
+            std::vector<int> faces = group.second;
+            size_t facesSize = faces.size();
+            NSData *facesData = [NSData dataWithBytes:faces.data() length:facesSize * sizeof(int)];
+            SCNGeometryElement *geometryElement = [SCNGeometryElement geometryElementWithData:facesData primitiveType:SCNGeometryPrimitiveTypeTriangles primitiveCount:facesSize / 3 bytesPerIndex:sizeof(int)];
+            [geometryElements addObject:geometryElement];
+            
+            SCNMaterial *material = materialCache[matId];
             [materials addObject:material];
         }
         
+        
+        /* Creating geometry based on vertices and indexes */
         SCNGeometry *geometry = [SCNGeometry geometryWithSources:@[vertexSource] elements:geometryElements];
         
         geometry.materials = materials;
